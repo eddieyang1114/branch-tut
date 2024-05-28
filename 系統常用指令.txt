@@ -1,5 +1,3 @@
-EVA4400 192.168.0.1 port 2373
-
 ========== Nikon ===================
 59.120.100.145 VPN Gateway
 59.120.100.148 manager IP
@@ -20,21 +18,21 @@ EVA4400 192.168.0.1 port 2373
 b&q
 
 ----------------
-¤¤°ê¤H¹Ø
+ä¸­åœ‹äººå£½
 N123192530
 286jp6vuA	
 -----------------
-¤½¥q¤H¸ê¡G
+å…¬å¸äººè³‡ï¼š
 N123192530
 30005810
 N123192530@
 -------------------
-¥[¯Z¨t²Î
+åŠ ç­ç³»çµ±
 eddieyang
 b8930089
 --------------------
 
-¤¤«H
+ä¸­ä¿¡
 eddieyang1
 1q2w3E4R5t
 --------------------
@@ -58,9 +56,9 @@ DB2 LIST History entry status flag:
 rmdev -dl fcs0 -R
 
 
-BOOTLIST¡G
-#bootlist -m normal -o (¬d¬İbootlist)
-#bootlist -m normal hdisk0 cd0 (³]¸mbootlist)
+BOOTLISTï¼š
+#bootlist -m normal -o (æŸ¥çœ‹bootlist)
+#bootlist -m normal hdisk0 cd0 (è¨­ç½®bootlist)
 
 Method error (/usr/lib/methods/chgvpath
 
@@ -99,7 +97,7 @@ db2 " reorg indexes all for table HIS.HBSHTHS_D allow write access "
 db2 runstats on table HIS.HBPNLTST and indexes all
 db2 " reorgchk current statistics on table HIS.HAEDC01 "
 db2 reorgchk current statistics on table all > chk.txt
-¨ú±o«e¨âµ§¸ê®Æ¡G 
+å–å¾—å‰å…©ç­†è³‡æ–™ï¼š 
 select * from table offset 0 limit 2
 
 db2 runstats on table ppt.aoprelat and indexes all
@@ -209,18 +207,18 @@ nbtstat -a IP
 
 Dear All,
 
-¥H¤U¬° F3SPC1 ¸ê®Æ®w³Æ¥÷¥¢±Ñ¤§ Log, ­ì¦]¬° db2rhist.asc (History Log) ÀÉ®×·lÃa, db notify ÀÉ®×¤§°O¿ı¥ç¬°¦¹­ì¦] !!
+ä»¥ä¸‹ç‚º F3SPC1 è³‡æ–™åº«å‚™ä»½å¤±æ•—ä¹‹ Log, åŸå› ç‚º db2rhist.asc (History Log) æª”æ¡ˆæå£, db notify æª”æ¡ˆä¹‹è¨˜éŒ„äº¦ç‚ºæ­¤åŸå›  !!
 
 Mon May  1 22:50:01 TAIST 2006
 SQL2048N  An error occurred while accessing object "db2rhist.asc".  Reason code: "4".
 Mon May  1 22:53:40 TAIST 2006
 
-¸Ñ¨M¤è¦¡¦p¤U¡G
+è§£æ±ºæ–¹å¼å¦‚ä¸‹ï¼š
 
-1. ¥ı©ó /sysuser/f3spc01/f3spc01/NODE0000/SQL00001 §ä¨ì db2rhist.asc ÀÉ®×, ±N¨ä move ¦Ü¥L¥Ø¿ı.
-2. °õ¦æ backup db ©R¥O¤´·|²£¥Í error message, ¦ı±N¨Ì¾Ú db2rhist.bak ÀÉ®×­«·s°µ¤@¥÷ db2rhist.asc ÀÉ®×.
-3. ¦A¦¸°õ¦æ backup db ©R¥OÀË¬d¬O§_¥¿±`³Æ¥÷, ­Y¤´²£¥Í error message, «h¦A±N db2rhist.asc & db2rhist.bak ÀÉ®×§¡ move ¦Ü¨ä¥L¥Ø¿ı.
-4. ¦A¦¸°õ¦æ backup db ©R¥OÀË¬d¬O§_¥¿±`³Æ¥÷. (¥Ø«eÅçÃÒ¨ì¦¹¨BÆJ¤w¥i«ì´_¥¿±`³Æ¥÷!!)
+1. å…ˆæ–¼ /sysuser/f3spc01/f3spc01/NODE0000/SQL00001 æ‰¾åˆ° db2rhist.asc æª”æ¡ˆ, å°‡å…¶ move è‡³ä»–ç›®éŒ„.
+2. åŸ·è¡Œ backup db å‘½ä»¤ä»æœƒç”¢ç”Ÿ error message, ä½†å°‡ä¾æ“š db2rhist.bak æª”æ¡ˆé‡æ–°åšä¸€ä»½ db2rhist.asc æª”æ¡ˆ.
+3. å†æ¬¡åŸ·è¡Œ backup db å‘½ä»¤æª¢æŸ¥æ˜¯å¦æ­£å¸¸å‚™ä»½, è‹¥ä»ç”¢ç”Ÿ error message, å‰‡å†å°‡ db2rhist.asc & db2rhist.bak æª”æ¡ˆå‡ move è‡³å…¶ä»–ç›®éŒ„.
+4. å†æ¬¡åŸ·è¡Œ backup db å‘½ä»¤æª¢æŸ¥æ˜¯å¦æ­£å¸¸å‚™ä»½. (ç›®å‰é©—è­‰åˆ°æ­¤æ­¥é©Ÿå·²å¯æ¢å¾©æ­£å¸¸å‚™ä»½!!)
 
 
 
@@ -254,14 +252,14 @@ db2 "select TABSCHEMA,TABNAME,TYPE,TBSPACE from SYSCAT.TABLES where TYPE='T' and
 db2 "select TABSCHEMA,TABNAME,TYPE,TBSPACE from SYSCAT.TABLES where TYPE='T' and TBSPACE='USR8K01' or TBSPACE='CD8K' order by TBSPACE,TABSCHEMA" | awk '{print "reorg indexes all for table "$1"."$2" allow no access;"}' > reorg_index_8K.sql
 
 
-¬d¬İºÏ±a¤º®e
+æŸ¥çœ‹ç£å¸¶å…§å®¹
 
 smitty lsmksysb
 
-¬d´Mpart number
+æŸ¥å°‹part number
 lscfg -vp -l hdisk0
 
-check fc ª©¥»
+check fc ç‰ˆæœ¬
 lscfg -vl fcs0
 
 upgrade firmware
@@ -295,7 +293,7 @@ nohup db2evmon -path /worktmp/evmon/tx > sqltx`date +%m%d%Y`_`date +%H%M`.txt &
 
 
 
-­pºâtable Äæ¦ì
+è¨ˆç®—table æ¬„ä½
 
 db2 "select substr(TABSCHEMA,1,10) as SCHEMA,substr(TABNAME,1,20) as TABNAME,card,NPAGES,FPAGES,FPAGES-NPAGES as FreePages,((FPAGES-NPAGES)*100/FPAGES) as FreePCT from syscat.tables where TBSPACE='USR32K02' order by 7 desc"|sort +1
 
@@ -387,12 +385,12 @@ Note: filespace name is case sensitive
 dsmamdc> q backupset
 
 
-­×§ï AIX TCP_IP °Ñ¼Æ
+ä¿®æ”¹ AIX TCP_IP åƒæ•¸
 
-­×§ï¤èªk, 
-#no ¡Vo tcp_keepinit=100
-­Y»İ­n ¦b¤U¦¸­«·s±Ò°Ê¤´µM¦³°µ¥Î¡G
-#no ¡Vp ¡Vo tcp_keepinit=100
+ä¿®æ”¹æ–¹æ³•, 
+#no â€“o tcp_keepinit=100
+è‹¥éœ€è¦ åœ¨ä¸‹æ¬¡é‡æ–°å•Ÿå‹•ä»ç„¶æœ‰åšç”¨ï¼š
+#no â€“p â€“o tcp_keepinit=100
 
 
 
@@ -433,7 +431,7 @@ The way to change Share user password :(highly recommeded to change the password
  
 2.use following command to change the password :
  
-server_export server_2 -ignore ¡VP cifs ¡Vn share_name ¡Vp ¡Vo user=default_user, group=default_group,ropasswd=password,rwpasswd=password /mountpoint_name
+server_export server_2 -ignore â€“P cifs â€“n share_name â€“p â€“o user=default_user, group=default_group,ropasswd=password,rwpasswd=password /mountpoint_name
  
 e.g : $server_export server_2 -ignore -P cifs -name fs1 -p -o user=eda group=sharegroup,ropasswd=<password>,rwpasswd=<password> /fs1
  
@@ -460,8 +458,8 @@ DB20000I  The CATALOG TCPIP NODE command completed successfully.
 
 =======  TSM Transation Log Full========================
 1.Format a new file space for recovery log use 
-Syntax : /usr/tivoli/tsm/server/bin/dsmfmt ¡Vm ¡Vlog newlog_file_name size
-Ex : /usr/tivoli/tsm/server/bin/dsmfmt ¡Vm ¡Vlog /worktmp/templog 501
+Syntax : /usr/tivoli/tsm/server/bin/dsmfmt â€“m â€“log newlog_file_name size
+Ex : /usr/tivoli/tsm/server/bin/dsmfmt â€“m â€“log /worktmp/templog 501
 2.Extend log space ( Emergency Log Extension ) 
 Syntax : /usr/tivoli/tsm/server/bin/dsmserv extend log newlog_file_name size
 Ex : /usr/tivoli/tsm/server/bin/dsmserv extend log /worktmp/templog 500
@@ -491,8 +489,8 @@ Automatically Startup.
 rc.adsmserv in /etc/inittab.
 
 Manually Startup.
-Change direcroty to ¡§/usr/tivoli/tsm/server/bin¡¨.
-Issue ¡§nohup dsmserv quiet¡¨ command
+Change direcroty to â€œ/usr/tivoli/tsm/server/binâ€.
+Issue â€œnohup dsmserv quietâ€ command
 
 ======================checkin & checkout Tape======================================
 volume Unavailable
@@ -508,9 +506,9 @@ Volume Read/Write
 CHECKIn LIBVolume 3584LIB HN0005 STATus=PRIvate
 
 
-REMOVE=YES »P REMOVE=BULK ¿ï¶µ¤§¶¡¦³¤@­Ó®t²§¡C |REMOVE=YES ·|´£¥Ü±z±q¯S©wªº¼Ñ²¾°£ºÏ±a§X¡A
-¨Ãµo¥X REPLY «ü¥O¡CREMOVE=BULK «ü¥XºÏ±a§X©Ò¦b¦ì¸m¡C¥¦¤£­n¨D¤]¤£»İ­n |REPLY «ü¥O¡C
-|´N REMOVE=YES ©Î REMOVE=BULK ¨âªÌ¦Ó¨¥¡ATSM ·|°õ¦æ¤Uªí©Ò¥Üªº°Ê§@¡C
+REMOVE=YES èˆ‡ REMOVE=BULK é¸é …ä¹‹é–“æœ‰ä¸€å€‹å·®ç•°ã€‚ |REMOVE=YES æœƒæç¤ºæ‚¨å¾ç‰¹å®šçš„æ§½ç§»é™¤ç£å¸¶åŒ£ï¼Œ
+ä¸¦ç™¼å‡º REPLY æŒ‡ä»¤ã€‚REMOVE=BULK æŒ‡å‡ºç£å¸¶åŒ£æ‰€åœ¨ä½ç½®ã€‚å®ƒä¸è¦æ±‚ä¹Ÿä¸éœ€è¦ |REPLY æŒ‡ä»¤ã€‚
+|å°± REMOVE=YES æˆ– REMOVE=BULK å…©è€…è€Œè¨€ï¼ŒTSM æœƒåŸ·è¡Œä¸‹è¡¨æ‰€ç¤ºçš„å‹•ä½œã€‚
 
 
 q req
@@ -650,36 +648,36 @@ rmdev -dl dpo -R ; rmdev -dl fscsi0 -R ; cfgmgr -vl fcs0 ; cfallvpath
 
 
 
-´N¥Ø«e¤½¥q´XºØ«¬¸¹ªº¥æ´«ªºmirror port°µªk:
+å°±ç›®å‰å…¬å¸å¹¾ç¨®å‹è™Ÿçš„äº¤æ›çš„mirror portåšæ³•:
 
 1.Cisco 3500
    cisco3500(config)#int fa0/41
    cisco3500(config-)#port monitor fa0/42
-   #¦bfa0/41³o­Óport¤U,ºÊ±±fa0/42ªº¬y¶q
+   #åœ¨fa0/41é€™å€‹portä¸‹,ç›£æ§fa0/42çš„æµé‡
 
 2.Cisco 2950/3550/3750/6509(WS-SUP720) IOS
   CS2950(config)#monitor session 1 source interface fastEthernet 0/1 both  /tx /rx
-  # ³]©w³QºÊ±±ºİ¤f,¨Ã³q¹Lboth,rx,tx°Ñ¼Æ³]©w¬y¶qÃş«¬       
+  # è¨­å®šè¢«ç›£æ§ç«¯å£,ä¸¦é€šéboth,rx,txåƒæ•¸è¨­å®šæµé‡é¡å‹       
   CS2950(config)#monitor session 1 destination interface fastEthernet 0/48 
-  #³]©wºÊ±±ºİ¤f.§Y¬y¶q±Ä¶°ºİ¤f.
+  #è¨­å®šç›£æ§ç«¯å£.å³æµé‡æ¡é›†ç«¯å£.
 
 3.Cisco6509 (SUP1A-2GE) Catalyst
   set span 4/1 4/8
-  #4/1ªº¬y¶qMirror¨ì4/8,4/8¬°ºÊ±±ºİ¤f.
+  #4/1çš„æµé‡Mirroråˆ°4/8,4/8ç‚ºç›£æ§ç«¯å£.
 
 4.Foundry FES4802 
    FES4802(config)mirror eth 47
    FES4802(config)int eth 48
    FES4802(config-if-100-48)monitor eth 47 both
-  #±q48ºÊ±±47 port.
+  #å¾48ç›£æ§47 port.
 
 5.EdgeIron 4802F
 EdgeIron 4802F(config)#monitor ports enable
 EdgeIron 4802F(config)#int 1/1/2
 EdgeIron 4802F(config-if 1/1/2)#port monitor 1/1/1
-# ¥ı±Ò¥Îmonitorªº¥\¯à,µM«á¦b1/1/2¤W­±ºÊ±±1/1/1³o­Óport¬y¶q.
+# å…ˆå•Ÿç”¨monitorçš„åŠŸèƒ½,ç„¶å¾Œåœ¨1/1/2ä¸Šé¢ç›£æ§1/1/1é€™å€‹portæµé‡.
 
-AP ¨C¤é¦^À³®É¶¡ªº¥[Á`
+AP æ¯æ—¥å›æ‡‰æ™‚é–“çš„åŠ ç¸½
 select HOST, to_char(LOG_DATE,'mm/dd/yyyy')as LOG_DATE, AP_NAME, sum(RPS_AVG)
 from SA.AP_TRX_RPS_DAY
 where log_date between '04/27/2008' and '05/20/2008'
@@ -730,34 +728,34 @@ verify microcode version
 1. lscfg -vl fcs0
 2. lsmcode -d fcs0
 
-3¡B1¡^¤U?·L?¤å¥óFC6239FW.bin¡A¤W?¨ìAIX¡C?¦æ¥¦¸Ñ??¡A¤f¥O¬O**RS/6000**¡C±o¨ì¤U­±ªº¤å¥ó¡G
+3ã€1ï¼‰ä¸‹?å¾®?æ–‡ä»¶FC6239FW.binï¼Œä¸Š?åˆ°AIXã€‚?è¡Œå®ƒè§£??ï¼Œå£ä»¤æ˜¯**RS/6000**ã€‚å¾—åˆ°ä¸‹é¢çš„æ–‡ä»¶ï¼š
 df1080f9.181301
 
-3¡B2¡^¥Î¤U­±ªº©R¥O??¥¦ªº®Õ?©M¬O§_¥¿ÚÌ¡G
+3ã€2ï¼‰ç”¨ä¸‹é¢çš„å‘½ä»¤??å®ƒçš„æ ¡?å’Œæ˜¯å¦æ­£ç¡®ï¼š
 sum df1080f9.181301 
-1.81x1ª©ªºchecksum ??¬O 45802
+1.81x1ç‰ˆçš„checksum ??æ˜¯ 45802
 
-3¡B3¡^²¾?¨ì¬Û?ªº¥Ø?¡G
+3ã€3ï¼‰ç§»?åˆ°ç›¸?çš„ç›®?ï¼š
 mv df1080f9.181301 /etc/microcode/df1080f9.181301
 
-4¡^¤É?·L?¡G
-¥Îroot¥Î?µn?¨ìAIX©R¥O¦æ¡A?¦ædiag ¡G
+4ï¼‰å‡?å¾®?ï¼š
+ç”¨rootç”¨?ç™»?åˆ°AIXå‘½ä»¤è¡Œï¼Œ?è¡Œdiag ï¼š
 #diag
-??¡G
+??ï¼š
 Task Selection (Diagnostics, Advanced Diagnostics, Service Aids, etc.) 
-??¡G
+??ï¼š
 Download Microcode 
-??­n¤É?·L?ªº¥ú?¥d??
+??è¦å‡?å¾®?çš„å…‰?å¡??
 fcs* 
-¦^?¡A¤É??©l¡K¡K
-?¤É??§ô¦Z¨t???¥Ü·L?¤É?¦Zªºª©¥»?181301.
+å›?ï¼Œå‡??å§‹â€¦â€¦
+?å‡??æŸåç³»???ç¤ºå¾®?å‡?åçš„ç‰ˆæœ¬?181301.
 
 
 
 
 
 db2 reorgchk current statistics on table all > chk.txt
-sed 's/ªí¡G/Table: /' /tmp/reorgchk.txt | \
+sed 's/è¡¨ï¼š/Table: /' /tmp/reorgchk.txt | \
 awk '{
 if (NF == 2 && $1 ~ /^Table/) printf "\n\n"$2" "; 
 if (NF == 12 && $NF ~ /\*/) printf "table "$1"."$2" ";
@@ -841,25 +839,25 @@ setkey.compcode = 0
 setkey.returncode = 0
 
 
-1. ¥ı±q app list ¥h§PÂ_»İ­n±Ò°Êªº ap , ¨Ã°µ sort. 
-2. ±q process §ì¨ú¥Ø«e¥¿¦b°õ¦æªº ap , ¨Ã°µ sort.
-3. ¤ñ¸û 1&2 ªºµ²ªG (²Ä1¶µ»İ¦bUser account¤Uªº/conf¤U¦³app_listªº¦a¤è)
+1. å…ˆå¾ app list å»åˆ¤æ–·éœ€è¦å•Ÿå‹•çš„ ap , ä¸¦åš sort. 
+2. å¾ process æŠ“å–ç›®å‰æ­£åœ¨åŸ·è¡Œçš„ ap , ä¸¦åš sort.
+3. æ¯”è¼ƒ 1&2 çš„çµæœ (ç¬¬1é …éœ€åœ¨User accountä¸‹çš„/confä¸‹æœ‰app_listçš„åœ°æ–¹)
  
  
-¤ñ¸û PPT AP 
+æ¯”è¼ƒ PPT AP 
  1. cat `ls -a app*`|grep exe |awk -F: '{if ($2=="Y") print $7}'|sort;cat `ls -a app*`|grep exe |awk -F: '{if ($2=="Y") print $7}'|wc -l 
  2. ps -ef|grep ppt/exe|grep " 1 "|grep -v grep|awk '{print $9}'|sort;ps -ef|grep ppt/exe|grep " 1 "|grep -v grep|awk '{print $9}'|wc -l 
  
-¤ñ¸û PPT DCS AP 
+æ¯”è¼ƒ PPT DCS AP 
  1. cat `ls -a app*`|grep exe |awk -F: '{if ($2=="Y") print $7}'|sort;cat `ls -a app*`|grep exe |awk -F: '{if ($2=="Y") print $7}'|wc -l 
  2. ps -ef|grep dcs/exe|grep " 1 "|grep -v grep|awk '{print $9}'|sort;ps -ef|grep dcs/exe|grep " 1 "|grep -v grep|awk '{print $9}'|wc -l 
  
  
-¤ñ¸û HIS AP 
+æ¯”è¼ƒ HIS AP 
  1. cat `ls -a app*`|grep exe |awk -F: '{if ($2=="Y") print $7}'|sort;cat `ls -a app*`|grep exe |awk -F: '{if ($2=="Y") print $7}'|wc -l 
  2. ps -ef|grep his/exe|grep " 1 "|grep -v grep|awk '{print $9}'|sort;ps -ef|grep his/exe|grep " 1 "|grep -v grep|awk '{print $9}'|wc -l 
  
-¤ñ¸û HIS DCS AP 
+æ¯”è¼ƒ HIS DCS AP 
  1. cat `ls -a app*`|grep exe |awk -F: '{if ($2=="Y") print $7}'|sort;cat `ls -a app*`|grep exe |awk -F: '{if ($2=="Y") print $7}'|wc -l 
  2. ps -ef|grep dcs/exe|grep " 1 "|grep -v grep|awk '{print $9}'|sort;ps -ef|grep dcs/exe|grep " 1 "|grep -v grep|awk 
 
@@ -869,19 +867,19 @@ tsm active log full
 backup tsm db will reset log util
 
 
-ºô¸ô½u(UTP,Unshielded Twisted Pair)¾Ç¦W¥sµL¾B½ªÂùµ±½u¡A¬O¥Ñ¥|¹ï½u¨C¹ï¦Û¦æ¤¬µ±ºc¦¨¡A¤¬µ±ªº§@¥Î¬OÁ×§K¶Ç¿é¤zÂZ¤Î°I´î¡C¦Ü©ó¹q¸Ü½uªº8P¤]¬O§e¤¬µ±±Æ¦C¡A¦ı¬O¨ä¤¬µ±ªº§@¥Î¬OÁ×§K¦b¥~¥Ö­é¶}«á±Æ§Ç²V¶Ã¡A¤¬µ±ªºµ{«×¤]¨SUTP½u¨Óªº°é¼Æ¦h¡C
+ç¶²è·¯ç·š(UTP,Unshielded Twisted Pair)å­¸åå«ç„¡é®è”½é›™çµç·šï¼Œæ˜¯ç”±å››å°ç·šæ¯å°è‡ªè¡Œäº’çµæ§‹æˆï¼Œäº’çµçš„ä½œç”¨æ˜¯é¿å…å‚³è¼¸å¹²æ“¾åŠè¡°æ¸›ã€‚è‡³æ–¼é›»è©±ç·šçš„8Pä¹Ÿæ˜¯å‘ˆäº’çµæ’åˆ—ï¼Œä½†æ˜¯å…¶äº’çµçš„ä½œç”¨æ˜¯é¿å…åœ¨å¤–çš®å‰é–‹å¾Œæ’åºæ··äº‚ï¼Œäº’çµçš„ç¨‹åº¦ä¹Ÿæ²’UTPç·šä¾†çš„åœˆæ•¸å¤šã€‚
 
-¥Ñ©óUTP½u¤¬µ±¬O¦³·N¸qªº¡A¬G¦b°µRJ45±µÀY®É¬O¤£¥i¥HÀH«K±µªº¡C
+ç”±æ–¼UTPç·šäº’çµæ˜¯æœ‰æ„ç¾©çš„ï¼Œæ•…åœ¨åšRJ45æ¥é ­æ™‚æ˜¯ä¸å¯ä»¥éš¨ä¾¿æ¥çš„ã€‚
 
-UTP½u¥D­n¾a²Ä¤@¡B¤G¡B¤T¡B¤»½u³B²z¦¬µo¸ê®Æ¡C
+UTPç·šä¸»è¦é ç¬¬ä¸€ã€äºŒã€ä¸‰ã€å…­ç·šè™•ç†æ”¶ç™¼è³‡æ–™ã€‚
 
-568B¦â§Ç-->¾í¥Õ¡B¾í¡Bºñ¥Õ¡BÂÅ¡BÂÅ¥Õ¡Bºñ¡B´Ä¥Õ¡B´Ä¡C
+568Bè‰²åº-->æ©™ç™½ã€æ©™ã€ç¶ ç™½ã€è—ã€è—ç™½ã€ç¶ ã€æ£•ç™½ã€æ£•ã€‚
 
-568A¦â§Ç-->ºñ¥Õ¡Bºñ¡B¾í¥Õ¡BÂÅ¡BÂÅ¥Õ¡B¾í¡B´Ä¥Õ¡B´Ä¡C
+568Aè‰²åº-->ç¶ ç™½ã€ç¶ ã€æ©™ç™½ã€è—ã€è—ç™½ã€æ©™ã€æ£•ç™½ã€æ£•ã€‚
 
-UTP½uªº¨âºİ¬Ò¬Û¦P¬°568B©Î568A¡AºÙ¬°¥­¦æ½u¡C
+UTPç·šçš„å…©ç«¯çš†ç›¸åŒç‚º568Bæˆ–568Aï¼Œç¨±ç‚ºå¹³è¡Œç·šã€‚
 
-UTP½uªº¨âºİ¤£¦P¡A¤@ºİ¬°A¥t¤@ºİ¬°B¡AºÙ¤§¬°¸õ½u¡C
+UTPç·šçš„å…©ç«¯ä¸åŒï¼Œä¸€ç«¯ç‚ºAå¦ä¸€ç«¯ç‚ºBï¼Œç¨±ä¹‹ç‚ºè·³ç·šã€‚
 
 
 *cx. no. : C858-839-2000
@@ -897,28 +895,28 @@ sqlplus sa/sa@macs01_AIX
 
 Dear All,
 
-          ´£¨Ñ§PÂ_ AP ¬O§_¥¿±`±Ò°Êªº shell ¨Ñ¦U¦ì°Ñ¦Ò ,
-          §Úªº¤è¦¡¦p¤U , 
-          1. ¥ı±q app list ¥h§PÂ_»İ­n±Ò°Êªº ap , ¨Ã°µ sort.
-          2. ±q process §ì¨ú¥Ø«e¥¿¦b°õ¦æªº ap , ¨Ã°µ sort
-          3. ¤ñ¸û 1&2 ªºµ²ªG
+          æä¾›åˆ¤æ–· AP æ˜¯å¦æ­£å¸¸å•Ÿå‹•çš„ shell ä¾›å„ä½åƒè€ƒ ,
+          æˆ‘çš„æ–¹å¼å¦‚ä¸‹ , 
+          1. å…ˆå¾ app list å»åˆ¤æ–·éœ€è¦å•Ÿå‹•çš„ ap , ä¸¦åš sort.
+          2. å¾ process æŠ“å–ç›®å‰æ­£åœ¨åŸ·è¡Œçš„ ap , ä¸¦åš sort
+          3. æ¯”è¼ƒ 1&2 çš„çµæœ
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-¤ñ¸û PPT AP
+æ¯”è¼ƒ PPT AP
   1. cat `ls -a app*`|grep exe |awk -F: '{if ($2=="Y") print $7}'|sort;cat `ls -a app*`|grep exe |awk -F: '{if ($2=="Y") print $7}'|wc -l
   2. ps -ef|grep ppt/exe|grep " 1 "|grep -v grep|awk '{print $9}'|sort;ps -ef|grep ppt/exe|grep " 1 "|grep -v grep|awk '{print $9}'|wc -l
 
-¤ñ¸û PPT DCS AP
+æ¯”è¼ƒ PPT DCS AP
   1. cat `ls -a app*`|grep exe |awk -F: '{if ($2=="Y") print $7}'|sort;cat `ls -a app*`|grep exe |awk -F: '{if ($2=="Y") print $7}'|wc -l
   2. ps -ef|grep dcs/exe|grep " 1 "|grep -v grep|awk '{print $9}'|sort;ps -ef|grep dcs/exe|grep " 1 "|grep -v grep|awk '{print $9}'|wc -l
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-¤ñ¸û HIS AP
+æ¯”è¼ƒ HIS AP
   1. cat `ls -a app*`|grep exe |awk -F: '{if ($2=="Y") print $7}'|sort;cat `ls -a app*`|grep exe |awk -F: '{if ($2=="Y") print $7}'|wc -l
   2. ps -ef|grep his/exe|grep " 1 "|grep -v grep|awk '{print $9}'|sort;ps -ef|grep his/exe|grep " 1 "|grep -v grep|awk '{print $9}'|wc -l
 
-¤ñ¸û HIS DCS AP
+æ¯”è¼ƒ HIS DCS AP
   1. cat `ls -a app*`|grep exe |awk -F: '{if ($2=="Y") print $7}'|sort;cat `ls -a app*`|grep exe |awk -F: '{if ($2=="Y") print $7}'|wc -l
   2. ps -ef|grep dcs/exe|grep " 1 "|grep -v grep|awk '{print $9}'|sort;ps -ef|grep dcs/exe|grep " 1 "|grep -v grep|awk '{print $9}'|wc -l
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -994,17 +992,17 @@ root      : xW1Vmgxo
 cactiuser : Om6PrMW1
 
 
-Cacti - CactiEZ 0.7 syslog ¬é¦³ localhost ªº log °İÃD
+Cacti - CactiEZ 0.7 syslog ç¥‡æœ‰ localhost çš„ log å•é¡Œ
 
 
-¸Ë¤F CactiEZ 0.7 «áµo²{ºô¸ô³]³Æ syslog ?¤£¶i¨Ó¡A
-¬d¤F¤@°}¤l¦b Cacti Official Forum §ä¨ì¬ÛÃö¸ê®Æ¡A­ì¨Ó¬O rsyslogd ªº¹w³] config ¦³°İÃD
-§â /etc/rsyslog.conf ¤º¤U¦C¨â¶µ³]©wªºµù¸Ñ½X¥h±¼¦A reboot ´N¥i¥H¤F
+è£äº† CactiEZ 0.7 å¾Œç™¼ç¾ç¶²è·¯è¨­å‚™ syslog ?ä¸é€²ä¾†ï¼Œ
+æŸ¥äº†ä¸€é™£å­åœ¨ Cacti Official Forum æ‰¾åˆ°ç›¸é—œè³‡æ–™ï¼ŒåŸä¾†æ˜¯ rsyslogd çš„é è¨­ config æœ‰å•é¡Œ
+æŠŠ /etc/rsyslog.conf å…§ä¸‹åˆ—å…©é …è¨­å®šçš„è¨»è§£ç¢¼å»æ‰å† reboot å°±å¯ä»¥äº†
   
    $ModLoad imudp
    $ModLoad imtcp
 9
-¥t¥~ syslog ÃC¦â¼Ğ¥Ü°İÃD¤]¤@¼Ë¦b¦PÀÉ®×¤º­×¥¿¡A§â¤U¦C¨â­Ó°Ñ¼Æ§ï¥¿´N¥i¥H¤F¡C
+å¦å¤– syslog é¡è‰²æ¨™ç¤ºå•é¡Œä¹Ÿä¸€æ¨£åœ¨åŒæª”æ¡ˆå…§ä¿®æ­£ï¼ŒæŠŠä¸‹åˆ—å…©å€‹åƒæ•¸æ”¹æ­£å°±å¯ä»¥äº†ã€‚
 
   %syslogfacility%, %syslogpriority%,  ==> '%syslogfacility-text%', %syslogpriority-text%',
 
@@ -1024,22 +1022,22 @@ exp  \'sys/cim123@mes    as    sysdba\' file=/home/oracle/mes_dump.dmp tables=VM
 
 
 Killing or pausing the impdp/expdp job
-»¡©ú
-·í¨Ï¥Î impdp/expdp §@¸ê®Æ®w¶×¥X/¶×¤J®É¡A¤@¥¹­n¤¤Â_µ{§Ç¡A¥u¬O Ctrl + C ¡AJob ¬O¤£·|°±¤îªº¡C
+èªªæ˜
+ç•¶ä½¿ç”¨ impdp/expdp ä½œè³‡æ–™åº«åŒ¯å‡º/åŒ¯å…¥æ™‚ï¼Œä¸€æ—¦è¦ä¸­æ–·ç¨‹åºï¼Œåªæ˜¯ Ctrl + C ï¼ŒJob æ˜¯ä¸æœƒåœæ­¢çš„ã€‚
 
-¥ô°È¥i¥HÀH®É°±¤î¤Î¦A¦¸«ì´_
-¥i¥H¦b»·ºİ¤£¦P¥D¾÷¤W¾Ş§@
-¨BÆJ
-ª¬ªp¤@¡G¦b expdp/impdp ªº©R¥O¦C¡A¥ß§Y¤¤Â_©Î¼È°±
+ä»»å‹™å¯ä»¥éš¨æ™‚åœæ­¢åŠå†æ¬¡æ¢å¾©
+å¯ä»¥åœ¨é ç«¯ä¸åŒä¸»æ©Ÿä¸Šæ“ä½œ
+æ­¥é©Ÿ
+ç‹€æ³ä¸€ï¼šåœ¨ expdp/impdp çš„å‘½ä»¤åˆ—ï¼Œç«‹å³ä¸­æ–·æˆ–æš«åœ
 
-°õ¦æ Ctrl + C ¤¤Â_¥Ø«eµ{§Ç
+åŸ·è¡Œ Ctrl + C ä¸­æ–·ç›®å‰ç¨‹åº
 Export> kill_job
 Are you sure you wish to stop this job ([yes]/no): yes 
 or
-Export> stop_job=immediate  ¼È®É°±¤î
-ª¬ªp¤G¡G¤w¸gÂ÷¶} expdp/impdp ©R¥O¦C
+Export> stop_job=immediate  æš«æ™‚åœæ­¢
+ç‹€æ³äºŒï¼šå·²ç¶“é›¢é–‹ expdp/impdp å‘½ä»¤åˆ—
 
-§ä¥X¶×¥X©Î¶×¤Jªº JOB_NAME
+æ‰¾å‡ºåŒ¯å‡ºæˆ–åŒ¯å…¥çš„ JOB_NAME
 
 SQL> set linesize 350
 SQL> col owner_name format a12
@@ -1053,14 +1051,14 @@ SYSTEM       SYS_EXPORT_SCHEMA_01           EXPORT     SCHEMA     EXECUTING <===
 SYSTEM       SYS_IMPORT_SCHEMA_02           IMPORT     SCHEMA     NOT RUNNING
 SYSTEM       SYS_IMPORT_SCHEMA_01           IMPORT     SCHEMA     NOT RUNNING
  
-­«·s¶i¤J³o­Ó job ªº©R¥O¦C
+é‡æ–°é€²å…¥é€™å€‹ job çš„å‘½ä»¤åˆ—
 
 expdp system ATTACH=<job_name>
 
 Export> kill_job
 or
 Export> stop_job=immediate 
- ¦pªG¬O¼È®É°±¤î¡A«ì´_¥ô°Èªº¨BÆJ¡G
+ å¦‚æœæ˜¯æš«æ™‚åœæ­¢ï¼Œæ¢å¾©ä»»å‹™çš„æ­¥é©Ÿï¼š
 
 Export> start_job
 Export> continue_client 
@@ -1068,20 +1066,20 @@ Export> continue_client
 
 
 
-¤@¡B¦¨¦]
+ä¸€ã€æˆå› 
 
 
-¡@¡@ ¼s¼½­·¼É«ü¹L¦hªº¼s¼½¥]®ø¯Ó¤F¤j¶qªººô¸ô±a¼e¡A¾É­P¥¿±`ªº¸ê®Æ¥]µLªk¥¿±`¦bºô¸ô¤¤¶Ç°e¡A³q±`«ü¤@­Ó¼s¼½¥]¤Ş°_¤F¦h­ÓªºÅTÀ³¡A¦Ó¨C­ÓÅTÀ³¤S¤Ş°_¤F¦h­Ó±oÅTÀ³¡A´N¹³ºu³·²y¤@¼Ë¡A§âºô¸ôªº©Ò¦³±a¼e³£®ø¯Ó¬pºÉ¡C¸Ó²{¶H³q±`¬O¥Ñ©óºô¸ôÀô¸ô¡B¬G»Ùºô¥d¡B¯f¬rµ¥¤Ş°_ªº¡C
+ã€€ã€€ å»£æ’­é¢¨æš´æŒ‡éå¤šçš„å»£æ’­åŒ…æ¶ˆè€—äº†å¤§é‡çš„ç¶²è·¯å¸¶å¯¬ï¼Œå°è‡´æ­£å¸¸çš„è³‡æ–™åŒ…ç„¡æ³•æ­£å¸¸åœ¨ç¶²è·¯ä¸­å‚³é€ï¼Œé€šå¸¸æŒ‡ä¸€å€‹å»£æ’­åŒ…å¼•èµ·äº†å¤šå€‹çš„éŸ¿æ‡‰ï¼Œè€Œæ¯å€‹éŸ¿æ‡‰åˆå¼•èµ·äº†å¤šå€‹å¾—éŸ¿æ‡‰ï¼Œå°±åƒæ»¾é›ªçƒä¸€æ¨£ï¼ŒæŠŠç¶²è·¯çš„æ‰€æœ‰å¸¶å¯¬éƒ½æ¶ˆè€—æ®†ç›¡ã€‚è©²ç¾è±¡é€šå¸¸æ˜¯ç”±æ–¼ç¶²è·¯ç’°è·¯ã€æ•…éšœç¶²å¡ã€ç—…æ¯’ç­‰å¼•èµ·çš„ã€‚
 
 
-¡@¡@ ¤G¡B¹w¨¾¡]¥HCISCO catalyst switch¬°¨Ò¡^
+ã€€ã€€ äºŒã€é é˜²ï¼ˆä»¥CISCO catalyst switchç‚ºä¾‹ï¼‰
 
 
-¡@¡@ 1¡B­º¥ı¨Ï¥ÎºôºŞ¤ÀªR§Aºô¸ôªºbaseline¡A³o¼Ë¥i¥H©ú½T§Aªººô¸ô·í¤¤¥¿±`±¡ªp¤Uªº¼s¼½¥]¤ñ¨Ò¬O¦h¤Ö¡C
+ã€€ã€€ 1ã€é¦–å…ˆä½¿ç”¨ç¶²ç®¡åˆ†æä½ ç¶²è·¯çš„baselineï¼Œé€™æ¨£å¯ä»¥æ˜ç¢ºä½ çš„ç¶²è·¯ç•¶ä¸­æ­£å¸¸æƒ…æ³ä¸‹çš„å»£æ’­åŒ…æ¯”ä¾‹æ˜¯å¤šå°‘ã€‚
 
 
-¡@¡@ 2¡B¥Ø«eµ´¤j¦h¼Æ¥æ´«¾÷³£¤ä«ù¼s¼½­·¼É§í¨î¯S©Ê¡A°t¸m¤F³o­Ó¯S©Ê¥H«á¡A§A¥i¥H±±¨î¨C­Ó°ğªº¼s¼½¥]ºû«ù¦b¯S©wªº¤ñ¨Ò¤§¤U¡A³o¼Ë¥i¥H«O¯d±a¼eµ¹¥²¶·ªºÀ³¥Î¡C
-¡@¡@ °t¸m¡G¡]¥HCISCO catalyst switch¬°¨Ò¡^
+ã€€ã€€ 2ã€ç›®å‰çµ•å¤§å¤šæ•¸äº¤æ›æ©Ÿéƒ½æ”¯æŒå»£æ’­é¢¨æš´æŠ‘åˆ¶ç‰¹æ€§ï¼Œé…ç½®äº†é€™å€‹ç‰¹æ€§ä»¥å¾Œï¼Œä½ å¯ä»¥æ§åˆ¶æ¯å€‹åŸ çš„å»£æ’­åŒ…ç¶­æŒåœ¨ç‰¹å®šçš„æ¯”ä¾‹ä¹‹ä¸‹ï¼Œé€™æ¨£å¯ä»¥ä¿ç•™å¸¶å¯¬çµ¦å¿…é ˆçš„æ‡‰ç”¨ã€‚
+ã€€ã€€ é…ç½®ï¼šï¼ˆä»¥CISCO catalyst switchç‚ºä¾‹ï¼‰
 
 Int XX
 storm-control broadcast level 20.00
@@ -1092,25 +1090,25 @@ Fa1/0/1 Forwarding 20.00% 0.00%
 
 
 
-¡@¡@ 3¡B°w¹ï¯Ê¬ÙSTP°t¸mµLªk±Æ°£ªººô¸ôÀô¸ô°İÃD¡A§Q¥ÎSTPªºBPDUguard¯S©Ê¨Ó¹w¨¾¼s¼½­·¼É¡C¦¹ºØÀô¸ô±¡ªp¥Ü·N¹Ï¦p¤U¡G
-¡@¡@ switch¡X¡Xhub¡]portA¡X¡XportB¡^
+ã€€ã€€ 3ã€é‡å°ç¼ºçœSTPé…ç½®ç„¡æ³•æ’é™¤çš„ç¶²è·¯ç’°è·¯å•é¡Œï¼Œåˆ©ç”¨STPçš„BPDUguardç‰¹æ€§ä¾†é é˜²å»£æ’­é¢¨æš´ã€‚æ­¤ç¨®ç’°è·¯æƒ…æ³ç¤ºæ„åœ–å¦‚ä¸‹ï¼š
+ã€€ã€€ switchâ€”â€”hubï¼ˆportAâ€”â€”portBï¼‰
 
-¡@¡@ Switch±Ò¥Î¤FSTP¡A¦Óhub«h³Q¤H¦³·NµL·Nªº¥Î¤@®Úºô½uÁp°_¨Ó¡A¾É­P¤Ş°_¤FÀô¸ô¡CSWITCHªº°ğ¤£·|¦¬¨ì¨ä¥L¥æ´«¾÷©Î¥»¥æ´«¾÷¨ä¥L°ğªº BPDU¡A¤£·|Ä²µo¸Ó°ğªºSTP¨Mµ¦¹Lµ{¡A¤]´N¤£¥i¯àblocking¸Ó°ğ¡A³o¼Ë´N·|¤Ş°_¼s¼½­·¼É¡C§Ú­Ì¥i¥H§Q¥ÎCISCO STPªºBPDUguard¯S©Ê¨Ó¹w¨¾³o¤@ÂI¡C
+ã€€ã€€ Switchå•Ÿç”¨äº†STPï¼Œè€Œhubå‰‡è¢«äººæœ‰æ„ç„¡æ„çš„ç”¨ä¸€æ ¹ç¶²ç·šè¯èµ·ä¾†ï¼Œå°è‡´å¼•èµ·äº†ç’°è·¯ã€‚SWITCHçš„åŸ ä¸æœƒæ”¶åˆ°å…¶ä»–äº¤æ›æ©Ÿæˆ–æœ¬äº¤æ›æ©Ÿå…¶ä»–åŸ çš„ BPDUï¼Œä¸æœƒè§¸ç™¼è©²åŸ çš„STPæ±ºç­–éç¨‹ï¼Œä¹Ÿå°±ä¸å¯èƒ½blockingè©²åŸ ï¼Œé€™æ¨£å°±æœƒå¼•èµ·å»£æ’­é¢¨æš´ã€‚æˆ‘å€‘å¯ä»¥åˆ©ç”¨CISCO STPçš„BPDUguardç‰¹æ€§ä¾†é é˜²é€™ä¸€é»ã€‚
 
 int xxx
 spanning-tree bpduguard enable
 
-¡@¡@ ***­È±oª`·Nªº¬Obpduguard¥i¥H¦b¥ş§½¤U°t¸m¡A¤]¥i¥H¦b¨C°ğªº°òÂ¦¤W°t¸m¡C¦pªG¦b¥ş§½¤U°t¸m¡A«h¥u¹ï°t¸m¤Fportfastªº°ğ°_§@¥Î¡A¦pªG¦b°ğ¤U°t¸m¡A«h¤£¥Î°t¸mportfast
+ã€€ã€€ ***å€¼å¾—æ³¨æ„çš„æ˜¯bpduguardå¯ä»¥åœ¨å…¨å±€ä¸‹é…ç½®ï¼Œä¹Ÿå¯ä»¥åœ¨æ¯åŸ çš„åŸºç¤ä¸Šé…ç½®ã€‚å¦‚æœåœ¨å…¨å±€ä¸‹é…ç½®ï¼Œå‰‡åªå°é…ç½®äº†portfastçš„åŸ èµ·ä½œç”¨ï¼Œå¦‚æœåœ¨åŸ ä¸‹é…ç½®ï¼Œå‰‡ä¸ç”¨é…ç½®portfast
 
 
-¡@¡@ ¤T¡B±Æ»Ù¡]¥HCISCO catalyst switch¬°¨Ò¡^
+ã€€ã€€ ä¸‰ã€æ’éšœï¼ˆä»¥CISCO catalyst switchç‚ºä¾‹ï¼‰
 
 
-¡@¡@ ¦pªGºô¸ô¤¤¤w¸g²£¥Í¤Fºô¸ô­·¼É¡]²{¶H³q±`¬°ºô¸ô¥á¥]¡BÅTÀ³¿ğ½w¡B®ÉÂ_®É³qµ¥¡^¡A«h¥i¥H§Q¥Î¦p¤Uªº¤èªk¨Ó±Æ»Ù
+ã€€ã€€ å¦‚æœç¶²è·¯ä¸­å·²ç¶“ç”¢ç”Ÿäº†ç¶²è·¯é¢¨æš´ï¼ˆç¾è±¡é€šå¸¸ç‚ºç¶²è·¯ä¸ŸåŒ…ã€éŸ¿æ‡‰é²ç·©ã€æ™‚æ–·æ™‚é€šç­‰ï¼‰ï¼Œå‰‡å¯ä»¥åˆ©ç”¨å¦‚ä¸‹çš„æ–¹æ³•ä¾†æ’éšœ
 
-¡@¡@ 1¡B­º¥ı½T»{¬O§_¬Oºô¸ô­·¼É©Î¨ä¥L²§±`¬y¶q¤Ş°_ªººô¸ô²§±`¡A¦b®Ö¤ß¥æ´«¾÷¤W
+ã€€ã€€ 1ã€é¦–å…ˆç¢ºèªæ˜¯å¦æ˜¯ç¶²è·¯é¢¨æš´æˆ–å…¶ä»–ç•°å¸¸æµé‡å¼•èµ·çš„ç¶²è·¯ç•°å¸¸ï¼Œåœ¨æ ¸å¿ƒäº¤æ›æ©Ÿä¸Š
 
-Switch¡rsh proc cpu | e 0.00
+Switchã€‰sh proc cpu | e 0.00
 CPU utilization for five seconds: 19%/0%; one minute: 19%; five minutes: 19%
 PID Runtime(ms) Invoked uSecs 5Sec 1Min 5Min TTY Process
 15 20170516 76615501 263 0.31% 0.13% 0.12% 0 ARP Input
@@ -1122,10 +1120,10 @@ PID Runtime(ms) Invoked uSecs 5Sec 1Min 5Min TTY Process
 58 4525900 28130423 160 0.31% 0.25% 0.18% 0 CEF process
 96 20789148 344043382 60 0.23% 0.09% 0.08% 0 Standby (HSRP)
 
-¡@¡@ ¦pªG¥æ´«¾÷ªºCPU§Q¥Î²v¸û°ª¡A¥B¤j³¡¤Àªº¸ê·½³£³Q¡§IP Input¡¨¶iµ{¦û¥Î¡A«h°ò¥»¥i¥H½T©wºô¸ô¤¤¦³¤j¬y¶qªº¸ê®Æ
+ã€€ã€€ å¦‚æœäº¤æ›æ©Ÿçš„CPUåˆ©ç”¨ç‡è¼ƒé«˜ï¼Œä¸”å¤§éƒ¨åˆ†çš„è³‡æºéƒ½è¢«â€œIP Inputâ€é€²ç¨‹ä½”ç”¨ï¼Œå‰‡åŸºæœ¬å¯ä»¥ç¢ºå®šç¶²è·¯ä¸­æœ‰å¤§æµé‡çš„è³‡æ–™
 
 
-¡@¡@ 2¡B¬d§ä²§±`¬y¶q¬O±q¥æ´«¾÷ªº¨º¤@­Ó°ğ¨Óªº¡G
+ã€€ã€€ 2ã€æŸ¥æ‰¾ç•°å¸¸æµé‡æ˜¯å¾äº¤æ›æ©Ÿçš„é‚£ä¸€å€‹åŸ ä¾†çš„ï¼š
 
 switch #sh int | i protocol|rate|broadcasts
 FastEthernet1/0/1 is up, line protocol is up (connected)
@@ -1134,26 +1132,26 @@ Queueing strategy: fifo
 5 minute output rate 2000 bits/sec, 3 packets/sec
 Received 241676 broadcasts (0 multicast)
 
-¡@¡@ ¦pªG§ä¨ì¤@­Ó°ğªºinput rate«D±`°ª¡A¥B±µ¦¬¨ìªº¼s¼½¥]¤]«D±`¦h¡A«h°ò¥»¥i¥H§ä¨ì¨Ó·½¡A¦pªG¸Ó°ğ¤UÁpªº¤]¬O¥iºŞ²zªº¥æ´«¾÷¡A«h¦A¦¸°õ¦æ¦¹¹Lµ{¡Aª½¨ì§ä¨ì¤@­Ó³s±µPC©ÎªÌHUBªº°ğ
+ã€€ã€€ å¦‚æœæ‰¾åˆ°ä¸€å€‹åŸ çš„input rateéå¸¸é«˜ï¼Œä¸”æ¥æ”¶åˆ°çš„å»£æ’­åŒ…ä¹Ÿéå¸¸å¤šï¼Œå‰‡åŸºæœ¬å¯ä»¥æ‰¾åˆ°ä¾†æºï¼Œå¦‚æœè©²åŸ ä¸‹è¯çš„ä¹Ÿæ˜¯å¯ç®¡ç†çš„äº¤æ›æ©Ÿï¼Œå‰‡å†æ¬¡åŸ·è¡Œæ­¤éç¨‹ï¼Œç›´åˆ°æ‰¾åˆ°ä¸€å€‹é€£æ¥PCæˆ–è€…HUBçš„åŸ 
 
 
-¡@¡@ 3¡Bshutdown¸Ó°ğ
+ã€€ã€€ 3ã€shutdownè©²åŸ 
 
 int xx
 shutdown
 
-¡@¡@ 4¡B¬d§ä²£¥Í²§±`¬y¶qªº®Ú·½
+ã€€ã€€ 4ã€æŸ¥æ‰¾ç”¢ç”Ÿç•°å¸¸æµé‡çš„æ ¹æº
 
-¡@¡@ ¦pªG¬OHUBÀô¸ô¡A«h©î±¼Àô¡F¦pªG¬O¯f¬r¡A«h°µ±ş¬r³B²z¡F¦pªG¬Oºô¥d²§±`¡A«h§ó´«ºô¥d¡C¦¹³¡¤À¤£¸Ô­z¡C
+ã€€ã€€ å¦‚æœæ˜¯HUBç’°è·¯ï¼Œå‰‡æ‹†æ‰ç’°ï¼›å¦‚æœæ˜¯ç—…æ¯’ï¼Œå‰‡åšæ®ºæ¯’è™•ç†ï¼›å¦‚æœæ˜¯ç¶²å¡ç•°å¸¸ï¼Œå‰‡æ›´æ›ç¶²å¡ã€‚æ­¤éƒ¨åˆ†ä¸è©³è¿°ã€‚
 
 
-¡@¡@ 5¡B½T»{¥æ´«¾÷ªºCEF¥\¯à¬O§_±Ò¥Î¡A¦pªG¨S¦³¡A«h»İ­n±Ò¥Î¡A¥i¥H¥[³t¬y¶qªºÂàµo
+ã€€ã€€ 5ã€ç¢ºèªäº¤æ›æ©Ÿçš„CEFåŠŸèƒ½æ˜¯å¦å•Ÿç”¨ï¼Œå¦‚æœæ²’æœ‰ï¼Œå‰‡éœ€è¦å•Ÿç”¨ï¼Œå¯ä»¥åŠ é€Ÿæµé‡çš„è½‰ç™¼
 
-¡@¡@ °t¸mCEF¡G
+ã€€ã€€ é…ç½®CEFï¼š
 
-switch¡rsh ip cef
+switchã€‰sh ip cef
 
-¡@¡@ ¥ş§½¼Ò¦¡¤U¿é¤J
+ã€€ã€€ å…¨å±€æ¨¡å¼ä¸‹è¼¸å…¥
 
 ip cef
 
@@ -1200,25 +1198,25 @@ LINUX create lv and mount
 6. mount /dev/logvg/loglv /Mount_Point  
 
 
-±N¹q¸£»P Switch ¤Wªº Console Port ¹ï±µ¡A¥Î§A²ßºDªº³nÅé¶}±Ò Console µe­±
-±N±µ©ó Switch ¤Wªº¹q·½©Ş°£¡A±µ¤W Switch ¹q·½¡A¦P®É¶¡«ö¦í Switch ­±ªO¤Wªº ¡uMODE¡v Áä¡A«İ Port 1 ¿O¸¹º¶·À«á
-¦¹®É Console µe­±·|¥X²{ ¡uswitch:¡v ´£¥Ü¿é¤Jµe­±
-¿é¤J flash_init
-¿é¤J load_helper
-¿é¤J rename flash:config.text flash:config.old
-¿é¤J boot
-¥æ´«¾¹±Ò°Ê«á¥X²{ Continue with configuration dialog? [yes/no]: ¦¹°T®§¿é¤J ¡uno¡v
-¥X²{ Press RETURN to get started. ¦¹°T®§®É«ö¤U ¡uEnter¡v¡A±o¨ì´£¥Ü²Å¸¹¡uSwitch>¡v¡A±µµÛ¶i¦æ¦p¤U¾Ş§@
+å°‡é›»è…¦èˆ‡ Switch ä¸Šçš„ Console Port å°æ¥ï¼Œç”¨ä½ ç¿’æ…£çš„è»Ÿé«”é–‹å•Ÿ Console ç•«é¢
+å°‡æ¥æ–¼ Switch ä¸Šçš„é›»æºæ‹”é™¤ï¼Œæ¥ä¸Š Switch é›»æºï¼ŒåŒæ™‚é–“æŒ‰ä½ Switch é¢æ¿ä¸Šçš„ ã€ŒMODEã€ éµï¼Œå¾… Port 1 ç‡ˆè™Ÿç†„æ»…å¾Œ
+æ­¤æ™‚ Console ç•«é¢æœƒå‡ºç¾ ã€Œswitch:ã€ æç¤ºè¼¸å…¥ç•«é¢
+è¼¸å…¥ flash_init
+è¼¸å…¥ load_helper
+è¼¸å…¥ rename flash:config.text flash:config.old
+è¼¸å…¥ boot
+äº¤æ›å™¨å•Ÿå‹•å¾Œå‡ºç¾ Continue with configuration dialog? [yes/no]: æ­¤è¨Šæ¯è¼¸å…¥ ã€Œnoã€
+å‡ºç¾ Press RETURN to get started. æ­¤è¨Šæ¯æ™‚æŒ‰ä¸‹ ã€ŒEnterã€ï¼Œå¾—åˆ°æç¤ºç¬¦è™Ÿã€ŒSwitch>ã€ï¼Œæ¥è‘—é€²è¡Œå¦‚ä¸‹æ“ä½œ
  Switch>en
  Switch#
- Switch#rename flash:config.old flash:config.text           //±NÀÉ®×¦WºÙ§ï¦^ («O«ù­ì³]©w)
- Switch#copy flash:config.text system:running-config        //±N¤§«eªº³]©w¤º®e¨ú¦^
- Switch#write erase                                         //­Y¤£·Q±N¤§«e³]©w¨ú¦^¦Ó¬O­n«ì´_­ì¼t¹w³]­È®É
- Erasing the nvram filesystem will remove all files! Continue? [confirm]  //½T»{¬O§_­n²MªÅ¤º®e
+ Switch#rename flash:config.old flash:config.text           //å°‡æª”æ¡ˆåç¨±æ”¹å› (ä¿æŒåŸè¨­å®š)
+ Switch#copy flash:config.text system:running-config        //å°‡ä¹‹å‰çš„è¨­å®šå…§å®¹å–å›
+ Switch#write erase                                         //è‹¥ä¸æƒ³å°‡ä¹‹å‰è¨­å®šå–å›è€Œæ˜¯è¦æ¢å¾©åŸå» é è¨­å€¼æ™‚
+ Erasing the nvram filesystem will remove all files! Continue? [confirm]  //ç¢ºèªæ˜¯å¦è¦æ¸…ç©ºå…§å®¹
  Erase of nvram: complete
- Switch#reload                                              //­«·s±Ò°Ê Switch
- System configuration has been modified. Save? [yes/no]: no //¤£±NÂÂ¦³³]©w¦^¦s    
- Proceed with reload? [confirm]y                            //½T©w±N Switch ­«·s±Ò°Ê
+ Switch#reload                                              //é‡æ–°å•Ÿå‹• Switch
+ System configuration has been modified. Save? [yes/no]: no //ä¸å°‡èˆŠæœ‰è¨­å®šå›å­˜    
+ Proceed with reload? [confirm]y                            //ç¢ºå®šå°‡ Switch é‡æ–°å•Ÿå‹•
 
 
 
@@ -1236,8 +1234,8 @@ DBLOGARCH
 
 TSM Server Client node update password
 1. dsmadmc --> update node D3DEV02 (node) D3DEV02(password)  FORCEPwreset=No
-2. client °õ¦ædsmc ¿é¤J·s±K½X --> ´ú¸Õ³Æ¥÷
-3. °õ¦ægui´ú¸Õ¨ú¦^ÀÉ®×¬O§_¥¿±`¡C
+2. client åŸ·è¡Œdsmc è¼¸å…¥æ–°å¯†ç¢¼ --> æ¸¬è©¦å‚™ä»½
+3. åŸ·è¡Œguiæ¸¬è©¦å–å›æª”æ¡ˆæ˜¯å¦æ­£å¸¸ã€‚
 
 update user authority for tsm (add node)
 GRANT AUTHORITY hannstar CLasses=Node NOde=MACS01
@@ -1250,7 +1248,7 @@ V7000 superuser	passw0rd
 
 
 1. dsmadmc --> update node D3DEV01(node) D3DEV01(pwd) forcep=no
-2. AIX --> dsmc --> ¿é¤J±K½X¡C(»İ°õ¦æ§_«h³Æ¥÷·|¥¢±Ñ)
+2. AIX --> dsmc --> è¼¸å…¥å¯†ç¢¼ã€‚(éœ€åŸ·è¡Œå¦å‰‡å‚™ä»½æœƒå¤±æ•—)
 3. dsmadmc --> register admin D3DEV01 D3DEV01
 4. dsmadmc --> grant authority D3DEV01 class=node  node=D3DEV01 authority=owner
 
@@ -1259,15 +1257,15 @@ dsmc -optfile=/tsmhafs/c3hdb01/baclient/dsm.opt
 
 
 
-CISCO 2950 3550 ±K½X¦^´_
+CISCO 2950 3550 å¯†ç¢¼å›å¾©
 
 1. flash_init
 2. load_helper
 3. rename flash:config.text flash:config.old
 4. boot
- ¥H¤W«ü¥O¿é¤J§¹«á¡A´N·|±N³]³Æ¶}¾÷¡A¦¹®É´N·|¸õ¹L±K½XÀË¬d
+ ä»¥ä¸ŠæŒ‡ä»¤è¼¸å…¥å®Œå¾Œï¼Œå°±æœƒå°‡è¨­å‚™é–‹æ©Ÿï¼Œæ­¤æ™‚å°±æœƒè·³éå¯†ç¢¼æª¢æŸ¥
 
-3) ­«·s¶}¾÷¦¨¥\«á¡A¶i¤J IOS enable mode §Q¥Î«ü¥O¡uenable password¡v­«·s³]©w±K½X¡A¨Ã°O±o§â config.old ÀÉ®×¦WºÙ§ï¦^ config.txt,
+3) é‡æ–°é–‹æ©ŸæˆåŠŸå¾Œï¼Œé€²å…¥ IOS enable mode åˆ©ç”¨æŒ‡ä»¤ã€Œenable passwordã€é‡æ–°è¨­å®šå¯†ç¢¼ï¼Œä¸¦è¨˜å¾—æŠŠ config.old æª”æ¡ˆåç¨±æ”¹å› config.txt,
 5. rename flash:config.old flash:config.text
 6. copy flash:config.text system:running-config
 7. config terminal
@@ -1282,57 +1280,57 @@ dsmserv restore db todate=today
 
 tsm command 
  check expinterval config : q option
- setopt expinterval 0 => ­×§ïexpire ®É¶¡¶g´Á (Ãö³¬¨t²Î¹w³]¦Û°Ê°õ¦æ¡G«D±Æµ{)
+ setopt expinterval 0 => ä¿®æ”¹expire æ™‚é–“é€±æœŸ (é—œé–‰ç³»çµ±é è¨­è‡ªå‹•åŸ·è¡Œï¼šéæ’ç¨‹)
  
- ³]©wtsm db log mode 
- set logmode rollforward => q status (ÀË¬dª¬ºA)
- 
- 
- tsm commnd ®t²§
- query occ ¡G¹ê»Ú³Æ¥÷¸ê®Æ¨Ï¥ÎªÅ¶¡¤j¤p
- query filespace ¡G ³Æ¥÷·í®É¥D¾÷©Ò¦³ÀÉ®×¨t²Î¸ê°T
+ è¨­å®štsm db log mode 
+ set logmode rollforward => q status (æª¢æŸ¥ç‹€æ…‹)
  
  
- 
- L20 D °Ï¥¼±µ¤Wcisco ºô¸ô½u¸¹20D053¡B20D050¡B20D059¡B20D046
+ tsm commnd å·®ç•°
+ query occ ï¼šå¯¦éš›å‚™ä»½è³‡æ–™ä½¿ç”¨ç©ºé–“å¤§å°
+ query filespace ï¼š å‚™ä»½ç•¶æ™‚ä¸»æ©Ÿæ‰€æœ‰æª”æ¡ˆç³»çµ±è³‡è¨Š
  
  
  
- ¹LÂoÀÉ®×¤£À£ÁY
+ L20 D å€æœªæ¥ä¸Šcisco ç¶²è·¯ç·šè™Ÿ20D053ã€20D050ã€20D059ã€20D046
+ 
+ 
+ 
+ éæ¿¾æª”æ¡ˆä¸å£“ç¸®
  C:\>"C:\Program Files\WinRAR\winrar.exe" u -ibck -inul -agYYYYMMDD D:\web_prs_BKP\web_prs_.rar  C:\web_prs -x*\Web_Prs\F3CFINSQCS_AOI\image_temp\*  -x*\web_prs\ora\*
  
  
  CISCO ACL 
- ip access-list resequence VLAN9_IN 10 10 ¡G­×§ïacl ½s¸¹ ±q10¶}©l¶¡¹j10
+ ip access-list resequence VLAN9_IN 10 10 ï¼šä¿®æ”¹acl ç·¨è™Ÿ å¾10é–‹å§‹é–“éš”10
  
- ¦bCisco IOSªº·sª©¥»¡]12.2(14)S¡A12.2(15)T¡A12.3(2)T¥H¤W)¤¤
-¥[¤J¤FACL½s¸¹(ACL Sequence Numbering)¥\¯à¡A
-¨Ï±oAccess Control Listªº½s¿èÅÜ±o«D±`ªº¤è«K©M§Ö±¶¡A¥H¤U»¡©ú¡G
+ åœ¨Cisco IOSçš„æ–°ç‰ˆæœ¬ï¼ˆ12.2(14)Sï¼Œ12.2(15)Tï¼Œ12.3(2)Tä»¥ä¸Š)ä¸­
+åŠ å…¥äº†ACLç·¨è™Ÿ(ACL Sequence Numbering)åŠŸèƒ½ï¼Œ
+ä½¿å¾—Access Control Listçš„ç·¨è¼¯è®Šå¾—éå¸¸çš„æ–¹ä¾¿å’Œå¿«æ·ï¼Œä»¥ä¸‹èªªæ˜ï¼š
 
 
-Åã¥ÜAccess Control List»y¥yªº·í«e§Ç¸¹
-¡@R1#show ip access-lists 199
-¡@¡@Extended IP access list 199
-¡@¡@10 deny tcp any any eq www
-¡@¡@20 deny udp any any eq 8000
-¡@¡@30 permit ip any any
-¦bAccess Control List¤¤«ü©wªº¦ì¸m¤W¼W¥[¤@­Ó»y¥y
-¡@R1(config)#ip access-list extended 199
-¡@R1(config-ext-nacl)#12 permit udp any host 192.168.1.1 eq 8000
-¡@R1#show ip access-lists 199
-¡@¡@Extended IP access list 199
-¡@¡@10 deny tcp any any eq www
-¡@¡@12 permit udp any host 192.168.1.1 eq 8000
-¡@¡@20 deny udp any any eq 8000
-¡@¡@30 permit ip any any
-§R°£Access Control List¤¤ªº¬Y­Ó¯S©w»y¥y
-¡@R1(config)#ip access-list extended 199
-¡@R1(config-ext-nacl)#no 20
-¡@R1#show ip access-lists 199
-¡@¡@Extended IP access list 199
-¡@¡@10 deny tcp any any eq www
-¡@¡@12 permit udp any host 192.168.1.1 eq 8000
-¡@¡@30 permit ip any any
+é¡¯ç¤ºAccess Control Listèªå¥çš„ç•¶å‰åºè™Ÿ
+ã€€R1#show ip access-lists 199
+ã€€ã€€Extended IP access list 199
+ã€€ã€€10 deny tcp any any eq www
+ã€€ã€€20 deny udp any any eq 8000
+ã€€ã€€30 permit ip any any
+åœ¨Access Control Listä¸­æŒ‡å®šçš„ä½ç½®ä¸Šå¢åŠ ä¸€å€‹èªå¥
+ã€€R1(config)#ip access-list extended 199
+ã€€R1(config-ext-nacl)#12 permit udp any host 192.168.1.1 eq 8000
+ã€€R1#show ip access-lists 199
+ã€€ã€€Extended IP access list 199
+ã€€ã€€10 deny tcp any any eq www
+ã€€ã€€12 permit udp any host 192.168.1.1 eq 8000
+ã€€ã€€20 deny udp any any eq 8000
+ã€€ã€€30 permit ip any any
+åˆªé™¤Access Control Listä¸­çš„æŸå€‹ç‰¹å®šèªå¥
+ã€€R1(config)#ip access-list extended 199
+ã€€R1(config-ext-nacl)#no 20
+ã€€R1#show ip access-lists 199
+ã€€ã€€Extended IP access list 199
+ã€€ã€€10 deny tcp any any eq www
+ã€€ã€€12 permit udp any host 192.168.1.1 eq 8000
+ã€€ã€€30 permit ip any any
 
 
 Cisco Ether Channel Config:
@@ -1464,17 +1462,17 @@ alter system register;
 db2 restore db IBMFRPT from /V7000U_DBRESTORE to /sysuser/cfrinst replace existing
 
 
-Ciscoªº¬y¶q°¼¿ı¥\¯àºÙ§@:SPAN
+Ciscoçš„æµé‡å´éŒ„åŠŸèƒ½ç¨±ä½œ:SPAN
 
-SPAN¥i¥H³]©w­n§â«ü©wªºPort³£½Æ»s¤@¥÷¬y¶q¨ì
-¥t¤@­ÓªºPort¤W ,ÁÙ¥i¥H³]©w¥u­n½Æ»s¶i©Î¥Xªº¬y¶q¡C 
-SW Port1±µµÛ¹ï¤º¥~ªº¬y¶q¡A§Ú·Q­n°¼¿ı³o¬q¤ÀªR¡A
-©Ò¥H§Ú¥i¥H±NPort1¶i»P¥Xªº¬y¶q³£½Æ»s¤@¥÷¨ìPort2
-¨Ã±N¿ı»s©ÎºÊ±±«Ê¥]ªº³]³Æ±µ¨ìPort2¡A§¹¥ş¤£»İ­n´¡©Ş½u¸ô!
+SPANå¯ä»¥è¨­å®šè¦æŠŠæŒ‡å®šçš„Portéƒ½è¤‡è£½ä¸€ä»½æµé‡åˆ°
+å¦ä¸€å€‹çš„Portä¸Š ,é‚„å¯ä»¥è¨­å®šåªè¦è¤‡è£½é€²æˆ–å‡ºçš„æµé‡ã€‚ 
+SW Port1æ¥è‘—å°å…§å¤–çš„æµé‡ï¼Œæˆ‘æƒ³è¦å´éŒ„é€™æ®µåˆ†æï¼Œ
+æ‰€ä»¥æˆ‘å¯ä»¥å°‡Port1é€²èˆ‡å‡ºçš„æµé‡éƒ½è¤‡è£½ä¸€ä»½åˆ°Port2
+ä¸¦å°‡éŒ„è£½æˆ–ç›£æ§å°åŒ…çš„è¨­å‚™æ¥åˆ°Port2ï¼Œå®Œå…¨ä¸éœ€è¦æ’æ‹”ç·šè·¯!
 
 
 
-¥H¤U¤¶²Ğ¤@¤UCisco ªº¥æ´«¾¹°µ¬y¶q°¼¿ı«ü¥O
+ä»¥ä¸‹ä»‹ç´¹ä¸€ä¸‹Cisco çš„äº¤æ›å™¨åšæµé‡å´éŒ„æŒ‡ä»¤
 
 Command:
 
@@ -1483,28 +1481,28 @@ switch> show ip interface brief
 switch# conf t
 
 config# monitor session 1 source interface Fa0/2 both
-(config# monitor session [¼Æ¦r] [¨Ó·½©Î¥Øªº] interface [¤¶­±¥N¸¹] [¶i©Î¥X©Î¥ş³¡] )
-©Î¿ï¾Ü¦h­Ó¨Ó·½:
-monitor session 1 source interface fa0/2 - 13 , Fa0/15    //¤¶­±2-13»P15³£³Q½Æ»s
-monitor session 1 source interface fa0/2 , fa0/4    //¤¶­±2 »P 4 ³Q½Æ»s
+(config# monitor session [æ•¸å­—] [ä¾†æºæˆ–ç›®çš„] interface [ä»‹é¢ä»£è™Ÿ] [é€²æˆ–å‡ºæˆ–å…¨éƒ¨] )
+æˆ–é¸æ“‡å¤šå€‹ä¾†æº:
+monitor session 1 source interface fa0/2 - 13 , Fa0/15    //ä»‹é¢2-13èˆ‡15éƒ½è¢«è¤‡è£½
+monitor session 1 source interface fa0/2 , fa0/4    //ä»‹é¢2 èˆ‡ 4 è¢«è¤‡è£½
 
-³]©w½Æ»s¨ì«ü©wPort:
+è¨­å®šè¤‡è£½åˆ°æŒ‡å®šPort:
 config# monitor session 1 destination interface g0/1
 
-¥Ü·N¹Ï(Port³]©w¤£¦P):
+ç¤ºæ„åœ–(Portè¨­å®šä¸åŒ):
 
 
 
 
 
 check:
-1.°h¦^P mode
-(¨Ï¥Îexit)
-2. Show monitor session [¸¹½X]  or  show monitor
+1.é€€å›P mode
+(ä½¿ç”¨exit)
+2. Show monitor session [è™Ÿç¢¼]  or  show monitor
 
 
-­n²¾°£SPANªº³]©w , ¥u­n¦bGlobal mode¤U³]©w¨Ó·½»P¥Øªºªº«ü¥O«e­±¥[¤W no
-no monitor session 1§Y¥i
+è¦ç§»é™¤SPANçš„è¨­å®š , åªè¦åœ¨Global modeä¸‹è¨­å®šä¾†æºèˆ‡ç›®çš„çš„æŒ‡ä»¤å‰é¢åŠ ä¸Š no
+no monitor session 1å³å¯
 
 
 
@@ -1519,24 +1517,24 @@ DB2 Tablespace Resize
 
 
 
-ACL IN VLAN ª`·N¨Æ¶µ¡G
+ACL IN VLAN æ³¨æ„äº‹é …ï¼š
 
-¦bvlan¶¡ªºacl¤¤·í·½¦a§}¬q¬°À³¥Î vlan¤¶­±ªºip¬q®É¡A´N¬O¥Îin¤è¦V¡F
-¨Ó·½¡G172.27.10.1  VLAN 2    
-VLAN ¤¶­±¡G VLAN 2
-¸T¤î¦P¤@VLAN IP ACCESS ¨ä¥¦IP ©Î¬OªA°È
+åœ¨vlané–“çš„aclä¸­ç•¶æºåœ°å€æ®µç‚ºæ‡‰ç”¨ vlanä»‹é¢çš„ipæ®µæ™‚ï¼Œå°±æ˜¯ç”¨inæ–¹å‘ï¼›
+ä¾†æºï¼š172.27.10.1  VLAN 2    
+VLAN ä»‹é¢ï¼š VLAN 2
+ç¦æ­¢åŒä¸€VLAN IP ACCESS å…¶å®ƒIP æˆ–æ˜¯æœå‹™
 
-·í¥Øªº¦a§}¬q¬°À³¥Îvlan¤¶­±ªºip¬q®É¡A´N¬O¥Îout¤è¦V;
-¨Ó·½¡GVLAN 2 3 4 6 9 50 
-¥Ø¦a¡G VLAN 5
+ç•¶ç›®çš„åœ°å€æ®µç‚ºæ‡‰ç”¨vlanä»‹é¢çš„ipæ®µæ™‚ï¼Œå°±æ˜¯ç”¨outæ–¹å‘;
+ä¾†æºï¼šVLAN 2 3 4 6 9 50 
+ç›®åœ°ï¼š VLAN 5
 
 
-¥Ø«eAMHS ¨Ï¥Îªº¬°¦¹³W«h¸T¤î¥~³¡¦s¨úAMHS ºô¬qIP ¡A¥Ø¦aºİ¬°AMHS ºô¬q©Ò¥H¦bINTERFACE VLAN ¤W­n®M¥ÎOUT  
+ç›®å‰AMHS ä½¿ç”¨çš„ç‚ºæ­¤è¦å‰‡ç¦æ­¢å¤–éƒ¨å­˜å–AMHS ç¶²æ®µIP ï¼Œç›®åœ°ç«¯ç‚ºAMHS ç¶²æ®µæ‰€ä»¥åœ¨INTERFACE VLAN ä¸Šè¦å¥—ç”¨OUT  
 
 
 %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet2/0/1 (11), with TS_CIM_OA GigabitEthernet2/1/4 (1).
 
-# no cdp advertise-v2   ¦b¦U³]³Æ¤W¤U³o­Ó«ü¥O
+# no cdp advertise-v2   åœ¨å„è¨­å‚™ä¸Šä¸‹é€™å€‹æŒ‡ä»¤
 
 
 
@@ -1568,7 +1566,7 @@ ls -al | awk  ' { if ($5==0) print $9 }' | while read a b;do rm -f $a;done
 
 
 
-­Y­n¦b Cisco ³]³Æ¤W¨Ï¥Î©R¥O¦C¤¶­±¨ÓÃö³¬ Smart Agent for Licensing ªº "Call-home" ¥\¯à¡A±z¥i¥H«ö·Ó¥H¤U¨BÆJ¶i¦æ¾Ş§@¡G
+è‹¥è¦åœ¨ Cisco è¨­å‚™ä¸Šä½¿ç”¨å‘½ä»¤åˆ—ä»‹é¢ä¾†é—œé–‰ Smart Agent for Licensing çš„ "Call-home" åŠŸèƒ½ï¼Œæ‚¨å¯ä»¥æŒ‰ç…§ä»¥ä¸‹æ­¥é©Ÿé€²è¡Œæ“ä½œï¼š
 
 Disable Cisco Cisco Smart License Utility (CSLU)
 
@@ -1600,7 +1598,7 @@ execute update-geo-ip
 
 
 
-³æ¤@­Óvlan ªºehterchannel ³]©w
+å–®ä¸€å€‹vlan çš„ehterchannel è¨­å®š
 
 interface Port-channel9
  switchport access vlan 9
