@@ -1,0 +1,1620 @@
+EVA4400 192.168.0.1 port 2373
+
+========== Nikon ===================
+59.120.100.145 VPN Gateway
+59.120.100.148 manager IP
+255.255.255.240
+59.120.100.145
+
+
+
+59.120.100.148/255.255.255.240
+========== AKT ====================
+
+59.120.100.145 VPN Gateway
+59.120.100.149 manager IP
+255.255.255.240
+59.120.100.145
+
+
+b&q
+
+----------------
+中國人壽
+N123192530
+286jp6vuA	
+-----------------
+公司人資：
+N123192530
+30005810
+N123192530@
+-------------------
+加班系統
+eddieyang
+b8930089
+--------------------
+
+中信
+eddieyang1
+1q2w3E4R5t
+--------------------
+
+172.27.51.107
+172.27.51.5
+6113
+
+
+DB2 LIST History entry status flag:
+
+   A - Active
+   D - Deleted
+   E - Expired
+   I - Inactive
+   N - Not yet committed
+   X - Do not delete
+   a - Incomplete active
+   i - Incomplete inactive
+   
+rmdev -dl fcs0 -R
+
+
+BOOTLIST：
+#bootlist -m normal -o (查看bootlist)
+#bootlist -m normal hdisk0 cd0 (設置bootlist)
+
+Method error (/usr/lib/methods/chgvpath
+
+lquerypr  -vh /dev/vpath1 check lock or not 
+
+
+lquerypr -rh /dev/vpath1 clear local  lock 
+lquerypr -vph /dev/vpath1 clear other server lock
+
+
+db2 solaris command 
+db2osconf
+
+copy tftp flash 172.27.254.239 feb03500.bin boot
+copy tftp flash 172.27.254.239 fem03500.bin mon
+
+copy tftp flash 172.27.254.239 fes03500.bin pri
+copy tftp flash 172.27.254.239 fes03500.bin sec
+reload
+copy tftp flash 172.27.254.239 fes03600d.bin pri
+
+A: varyonvg -b -u vg-name
+B: importvg -L vg-name
+A:varyonvg vg-name
+
+
+db2dart testdb /tsi 4
+
+db2untag-- -f--filename\
+db2 prune history 20080101 with force option
+db2 " reorg table ppt.HCPNL inplace allow write access"
+db2 " reorg table ppt.HCPNL inplace stop "
+db2 " reorg indexes all for table PPT.HCPNL allow write access"
+db2 " list history reorg all for db_name "
+db2 " reorg indexes all for table HIS.HBSHTHS_D allow write access "
+db2 runstats on table HIS.HBPNLTST and indexes all
+db2 " reorgchk current statistics on table HIS.HAEDC01 "
+db2 reorgchk current statistics on table all > chk.txt
+取得前兩筆資料： 
+select * from table offset 0 limit 2
+
+db2 runstats on table ppt.aoprelat and indexes all
+
+db2expln -d ibmappt -o expln.out2 -q " SQL " -g
+
+db2 "select TABSCHEMA,TABNAME,CARD ROWS,CREATE_TIME,TBSPACE,INDEX_TBSPACE,TABLEID,TYPE,COLCOUNT,OVERFLOW,TBSPACEID from syscat.tables" > /tmp/table_info.txt
+db2 "select substr(TABSCHEMA,1,10) as SCHEMA,substr(TABNAME,1,20) as TABNAME,substr(TBSPACE,1,10) as TBSPACE,card,NPAGES,FPAGES,FPAGES-NPAGES as FREEPAGES,((FPAGES-NPAGES)*100/FPAGES) as FreePCT from syscat.tables where TABSCHEMA not in ('SYSIBM','SYSCAT','SYSSTAT') order by 8 desc"|more
+
+db2 list applications show detail |grep -i dpwhtnxt|while read a b c d;do db2 get snapshot for application agentid "$c" > appl_"$c".log; done
+
+ps -ef |grep "82764"|while read u p o; do db2 list application show detail|grep "$p"; done
+        while true
+        do
+        ps auxw |grep -v wait |head -20
+        sleep 3
+        clear
+        done
+        while true
+        do
+        ps auxw |grep -v wait |head -20
+        sleep 3
+        clear
+        done
+
+
+cat `ls -a app*`|grep exe |awk -F: '{if ($2=="Y") print $7}'|sort;cat `ls -a app*`|grep exe |awk -F: '{if ($2=="Y") print $7}'|wc -l
+
+
+ps -ef|grep dcs/exe|grep " 1 "|grep -v grep|awk '{print $9}'|sort;ps -ef|grep dcs/exe|grep " 1 "|grep -v grep|awk '{print $9}'|wc -l
+
+
+
+lsattr -El mem0
+
+ps auxw|grep db2ag|head -10|while read unm pid oth; do db2 list application show detail|grep "$pid"; done
+while true
+        do
+        ps auxw |grep -v wait |head -n20
+        sleep 3
+        clear
+        done
+127     ps auxw|grep db2ag|head -10|while read unm pid oth; do db2 list application show detail|grep "$pid"; done
+136     while true
+        do
+        ps auxw |grep -v wait |head -20
+        sleep 3
+        clear
+        done
+137     db2 list applications show detail |grep -i java |wc -l
+
+
+cat `ls -a app*`|grep exe |awk -F: '{if ($2=="Y") print $7}'|sort;cat `ls -a app*`|grep exe |awk -F: '{if ($2=="Y") print $7}'|wc -l
+
+ps -ef|grep dcs/exe|grep " 1 "|grep -v grep|awk '{print $8}'|sort;ps -ef|grep dcs/exe|grep " 1 "|grep -v grep|awk '{print $8}'|wc -l
+
+
+ps -ef|grep ppt/exe|grep " 1 "|grep -v grep|awk '{print $8}'|sort;ps -ef|grep ppt/exe|grep " 1 "|grep -v grep|awk '{print $8}'|wc -l
+
+datapath query adapter 1
+datapath
+datapath query adapter 0
+datapath query adapter 1
+datapath query adaptstats 0
+datapath query adaptstats 1
+datapath query devstats
+datapath query device
+datapath query adapter
+
+
+
+==================================================== MQ ===================================================================
+display MQ Version -- > dspmqver
+display MQ QMANAGER --> dspmq
+
+Add new MQ Query
+1 su - mqm 
+2 runmqsc SMQCPP <XXX.mqs> XXX.log
+3 cd /worktmp/MQscript
+4 mqinfo.ksh SMQCPP
+5 runmqsc SMQCPP
+6 refresh security
+7 end 
+
+ipcs -m| grep mqm | awk '{print $2}'|xargs -i ipcrm -m {}
+ipcs -s| grep mqm | awk '{print $2}'|xargs -i ipcrm -s {}
+
+
+
+db2 "update monitor switches using  lock ON sort ON bufferpool ON uow ON table ON statement ON" 
+db2 "get snapshot for database manager"
+ 
+
+lscfg -vl fcs0
+lsdev -Cc adapter 
+datapath query adapter 0
+
+
+mirror vg 
+==============================================
+mklvcopy lvLogback2 2 hdisk0
+syncvg -v rootvg
+
+
+nbtstat -a IP
+
+
+Dear All,
+
+以下為 F3SPC1 資料庫備份失敗之 Log, 原因為 db2rhist.asc (History Log) 檔案損壞, db notify 檔案之記錄亦為此原因 !!
+
+Mon May  1 22:50:01 TAIST 2006
+SQL2048N  An error occurred while accessing object "db2rhist.asc".  Reason code: "4".
+Mon May  1 22:53:40 TAIST 2006
+
+解決方式如下：
+
+1. 先於 /sysuser/f3spc01/f3spc01/NODE0000/SQL00001 找到 db2rhist.asc 檔案, 將其 move 至他目錄.
+2. 執行 backup db 命令仍會產生 error message, 但將依據 db2rhist.bak 檔案重新做一份 db2rhist.asc 檔案.
+3. 再次執行 backup db 命令檢查是否正常備份, 若仍產生 error message, 則再將 db2rhist.asc & db2rhist.bak 檔案均 move 至其他目錄.
+4. 再次執行 backup db 命令檢查是否正常備份. (目前驗證到此步驟已可恢復正常備份!!)
+
+
+
+force db applications all 
+
+#!/usr/bin/ksh
+
+. $HOME/.profile
+
+for i in CHDCAP3 CIMEDA ^U
+do
+#db2 list applications | sed -n /$i/p
+db2 list applications | sed -n /$i/p | awk '{print $3}' | while read j;
+  do
+#     echo $j
+    db2 "force applications($j)"
+  done
+done
+
+
+[Genetate script for reorg tables which place in 4K page tablespace]
+db2 "select TABSCHEMA,TABNAME,TYPE,TBSPACE from SYSCAT.TABLES where TYPE='T' and TBSPACE='USR4K01' or TBSPACE='USR4K02' or TBSPACE='USR8K01' or TBSPACE='TSASNCA' or TBSPACE='TSASNUOW' order by TBSPACE,TABSCHEMA" | awk '{print "export to  "$1"."$2".ixf of ixf  select * from "$1"."$2" ;"}' > export_table_CF3SAC01.sql
+
+[Genetate script for reorg indexes which place in 4K page tablespace]
+db2 "select TABSCHEMA,TABNAME,TYPE,TBSPACE from SYSCAT.TABLES where TYPE='T' and TBSPACE='USR4K01' or TBSPACE='USR4K02' order by TBSPACE,TABSCHEMA" | awk '{print "reorg indexes all for table "$1"."$2" allow no access;"}' > reorg_index_4K.sql
+
+[Genetate script for reorg tables which place in 8K page tablespace]
+db2 "select TABSCHEMA,TABNAME,TYPE,TBSPACE from SYSCAT.TABLES where TYPE='T' and TBSPACE='USR8K01' or TBSPACE='CD8K' order by TBSPACE,TABSCHEMA" | awk '{print "reorg table "$1"."$2" allow no access use STEMP8K;"}' > reorg_table_8K.sql
+
+[Genetate script for reorg indexes which place in 8K page tablespace]
+db2 "select TABSCHEMA,TABNAME,TYPE,TBSPACE from SYSCAT.TABLES where TYPE='T' and TBSPACE='USR8K01' or TBSPACE='CD8K' order by TBSPACE,TABSCHEMA" | awk '{print "reorg indexes all for table "$1"."$2" allow no access;"}' > reorg_index_8K.sql
+
+
+查看磁帶內容
+
+smitty lsmksysb
+
+查尋part number
+lscfg -vp -l hdisk0
+
+check fc 版本
+lscfg -vl fcs0
+
+upgrade firmware
+
+diag -d fcs1 -T download
+
+
+rcp -p -r 172.27.30.1:/templv/USR4K/* .
+
+SQL0668 reason 4
+db2 "load from /templv/PPT_CSHIPLBL.ixf of ixf terminate into ppt.CSHTRWCN"
+
+
+create event monitor
+
+start--->
+
+db2 connect to ibmfppt
+db2 "create event monitor iisc1204st for statements write to file '/worktmp/evmon/st'"
+db2 "create event monitor iisc1204tx for transactions write to file '/worktmp/evmon/tx'"
+db2 set event monitor iisc1204st state=1
+db2 set event monitor iisc1204tx state=1
+
+stop --->
+
+db2 connect to ibmfppt
+db2 set event monitor iisc1204st state=0
+db2 set event monitor iisc1204tx state=0
+nohup db2evmon -path /worktmp/evmon/st > sqlst`date +%m%d%Y`_`date +%H%M`.txt &
+nohup db2evmon -path /worktmp/evmon/tx > sqltx`date +%m%d%Y`_`date +%H%M`.txt &
+
+
+
+計算table 欄位
+
+db2 "select substr(TABSCHEMA,1,10) as SCHEMA,substr(TABNAME,1,20) as TABNAME,card,NPAGES,FPAGES,FPAGES-NPAGES as FreePages,((FPAGES-NPAGES)*100/FPAGES) as FreePCT from syscat.tables where TBSPACE='USR32K02' order by 7 desc"|sort +1
+
+
+
+How to add vpath to cluster 
+
+ESS storwatch 
+1 assign all FC path to vpath (Cluster Node)
+2 cluster node run cfgmgr 
+3 chdev -l vpathX -a pv=yes 
+4 smit hacmp -->Cluster System Management -->Cluster Logical Volume Manager -->
+   Shared Volume Groups -->Set Characteristics of a Shared Volume Group -->
+   Add a Volume to a Shared Volume Group--> select VG --> select Vpath 
+   
+   
+   
+   
+
+CLI:
+server_df server_2
+server_log server_2
+nas_server -i -a
+
+
+TOP 3 TABLE AND Usage on EDCHIS & EDCRPT
+db2 "select substr(TABSCHEMA,1,10) as SCHEMA,substr(TABNAME,1,20) as TABNAME,card,(NPAGES*32/1024)USAGE from syscat.tables where TABSCHEMA not in ('SYSIBM','SYSCAT','SYSSTAT') order by 4 desc fetch  first 3 row only" > TOP3.log
+
+TOP 3 TABLE AND Usage on CF PPT
+db2 "select substr(TABSCHEMA,1,10) as SCHEMA,substr(TABNAME,1,20) as TABNAME,card,(NPAGES*4/1024)USAGE from syscat.tables where TABSCHEMA not in ('SYSIBM','SYSCAT','SYSSTAT') and TBSPACE='USR4K01' or TBSPACE='USR4K02' order by 4 desc fetch  first 3 row only" > out.log
+db2 "select substr(TABSCHEMA,1,10) as SCHEMA,substr(TABNAME,1,20) as TABNAME,card,(NPAGES*8/1024)USAGE from syscat.tables where TABSCHEMA not in ('SYSIBM','SYSCAT','SYSSTAT') and TBSPACE='USR8K01' or TBSPACE='USR8K02' order by 4 desc fetch  first 3 row only" | grep -v SCHEMA | grep -v - >> out.log
+
+
+TOP 3 TABLE AND Usage on CF HIS
+
+db2 "select substr(TABSCHEMA,1,10) as SCHEMA,substr(TABNAME,1,20) as TABNAME,card,(NPAGES*8/1024)USAGE from syscat.tables where TABSCHEMA not in ('SYSIBM','SYSCAT','SYSSTAT') and TBSPACE='USR8K01' or TBSPACE='USR8K02' or TBSPACE='USR8K03' order by 4 desc fetch  first 3 row only" > out.log
+db2 "select substr(TABSCHEMA,1,10) as SCHEMA,substr(TABNAME,1,20) as TABNAME,card,(NPAGES*16/1024)USAGE from syscat.tables where TABSCHEMA not in ('SYSIBM','SYSCAT','SYSSTAT') and TBSPACE='USR16K01'  order by 4 desc fetch  first 3 row only" >> out.log
+
+TOP 3 TABLE AND Usage on CF RPT
+db2 "select substr(TABSCHEMA,1,10) as SCHEMA,substr(TABNAME,1,20) as TABNAME,card,(NPAGES*16/1024)USAGE from syscat.tables where TABSCHEMA not in ('SYSIBM','SYSCAT','SYSSTAT') and TBSPACE='USR16K01' or TBSPACE='USR16K02' or TBSPACE='USR16K03' order by 4 desc fetch  first 3 row only" > out.log
+
+
+
+snaptool 
+
+/logback2/monitor/cf3rpt01/mon/bin
+
+
+
+delete MQ connections
+ps -ef |grep /usr/mqm/bin/amqcrsta |grep "Nov 1" |while read m n p; do kill -9 "$n"; done
+
+ps -ef |grep /usr/mqm/bin/amqcrsta |grep Dec |while read a b c d e;do kill -9 "$b";done
+
+dis Channel Job 
+dis chs(*) JOBNAME
+
+
+db2 " list applications " | grep -i cpedcwdg | while read m n o p ; do db2 " force application  ("$o")";done
+
+
+select *  from ARCHIVE.ARC_HASHTNOTE fetch  first 10  rows only ;
+
+
+container already in use 
+
+db2untag -f /dev/rfedacinsdat01
+
+
+
+Without pretending, this is how you will do it.
+
+1. Using command line admin client, issue following command:
+
+dsmadmc> q filespace nodename
+
+Where 'nodename' is the node that you want to delete. The output will show you filespaces that belongs to this node. If the output says 'no match found' this means there are no filespaces for this node
+
+2. Assuming that in step 1 it showed you filespaces, you will delete the using the delete filesp command
+
+dsmadmc> delete filesp nodename *
+
+Where nodename is the name of the node whose filespace you want to delete. IF you want you can use '*' to delete all filespaces or specifiy the filespace that you want to delete. The names of the filespaces can be seen by the output of step 1. 
+
+Note: filespace name is case sensitive
+
+3. To find if there is any backupset for this node, run
+
+dsmamdc> q backupset
+
+
+修改 AIX TCP_IP 參數
+
+修改方法, 
+#no –o tcp_keepinit=100
+若需要 在下次重新啟動仍然有做用：
+#no –p –o tcp_keepinit=100
+
+
+
+
+
+
+chvg -t 2 VGNAME
+
+
+
+dsmadmc -id=admin -password=password q actlog Search=miss
+
+dsmadmc -id=admin -password=password ACCess=UNAVailable | grep -i HN
+
+
+
+ more parse.log |  sed 's/[A-Za-z]//g' | awk '{ print $1,$2; }' | sed 's/(//g' |col -b | sed -e ``/^$/d''   > finally.log
+
+ls | awk '{print $1,$2,$3;}' | xargs rm
+
+
+
+The following accounts did not exist until EMC manually created them . For the operation/configuration issue , EMC will provide necessary doc/information for your own maintenance .
+ 
+The way to change FTP account password :
+ 
+1.Login control station as nasadmin then su to root .
+ 
+2.use following command to change the password :
+ 
+#/nas/sbin/server_user server_2 -passwd <account name> 
+ 
+e.g : #/nas/sbin/server_user server_2 -passwd ftp1
+ 
+The way to change Share user password :(highly recommeded to change the password during your maintenance window to avoid production impact because of any possible contingency  .)
+ 
+1.Login control station as nasadmin .
+ 
+2.use following command to change the password :
+ 
+server_export server_2 -ignore –P cifs –n share_name –p –o user=default_user, group=default_group,ropasswd=password,rwpasswd=password /mountpoint_name
+ 
+e.g : $server_export server_2 -ignore -P cifs -name fs1 -p -o user=eda group=sharegroup,ropasswd=<password>,rwpasswd=<password> /fs1
+ 
+You can use the following command to see the password changed before and after .
+ 
+$server_export server_2 | grep share 
+ 
+Should there be any concern , please don't hesitate to contact me via e-mail or desk phone .
+ 
+Deak Phone : 02-87253021
+
+
+
+
+
+cfpinst@cf3sac001:/sysuser/cfpinst>db2 catalog tcpip node B3SPC03 remote 172.27.10.9 server 50140
+                                   db2 catalog database F3SPC3 as F3SPC3 at node B3SPC03
+DB20000I  The CATALOG TCPIP NODE command completed successfully.
+
+
+
+
+=============================TSM===========================================
+
+=======  TSM Transation Log Full========================
+1.Format a new file space for recovery log use 
+Syntax : /usr/tivoli/tsm/server/bin/dsmfmt –m –log newlog_file_name size
+Ex : /usr/tivoli/tsm/server/bin/dsmfmt –m –log /worktmp/templog 501
+2.Extend log space ( Emergency Log Extension ) 
+Syntax : /usr/tivoli/tsm/server/bin/dsmserv extend log newlog_file_name size
+Ex : /usr/tivoli/tsm/server/bin/dsmserv extend log /worktmp/templog 500
+3.Startup TSM server 
+/usr/tivoli/tsm/server/bin/dsmserv
+4.Disable all client backup session 
+TSM Admin> disable session
+5.Execute DB fully backup to reduce log space utilization 
+TSM Admin> backup db devclass=tsmdbbkp type=full
+
+Query Volume Data
+query con HN0501 F=d
+Query Node Data
+Query occ F=d
+======================== Reduce transation Log ==========================
+reduce Recover Log Tablespace
+change TSM DB Log mode (Rollforward --> Normal)  
+reduce recover log 500  <--(500MB)
+remove Recover Log Volume 
+
+
+Del volh type=dbbackup todate=today
+q volhist type=dbb
+
+
+Automatically Startup.
+rc.adsmserv in /etc/inittab.
+
+Manually Startup.
+Change direcroty to “/usr/tivoli/tsm/server/bin”.
+Issue “nohup dsmserv quiet” command
+
+======================checkin & checkout Tape======================================
+volume Unavailable
+1. delete Volume HN0005 discard=yes
+--checkout libvol 3584LIB HN0539 remove=yes
+2. CHECKOUT LIBVOLUME 3584LIB HN0539 checklabel=no remove=yes 
+
+Volume Read/Write
+1. move data HN0005
+2. CHECKOUT LIBVOLUME 3584LIB HN0004 checklabel=no remove=bulk
+
+
+CHECKIn LIBVolume 3584LIB HN0005 STATus=PRIvate
+
+
+REMOVE=YES 與 REMOVE=BULK 選項之間有一個差異。 |REMOVE=YES 會提示您從特定的槽移除磁帶匣，
+並發出 REPLY 指令。REMOVE=BULK 指出磁帶匣所在位置。它不要求也不需要 |REPLY 指令。
+|就 REMOVE=YES 或 REMOVE=BULK 兩者而言，TSM 會執行下表所示的動作。
+
+
+q req
+reply XXX
+
+label libvolume abc checkin=scratch search=Bulk labelsource=barcode overwrite=yes
+
+
+q proc
+ 
+can proc Pid
+check vol data
+QUERY CONTENT HN0550
+
+1. To check which tape will be removed from this tape Lib.by q vol command 
+2.To check this tape is at "scratch" status. by q libvol command.
+3.To check out this tape to bulk by checkout libv command.
+4.To double check if this tape have removed from tape Lib. by q libvol command
+5.To take out this tape from bulk.
+
+ 
+================================Create a new Backup or Archivr Define================
+
+1. Define a new class 
+2. assign a node to Schulde
+3. Client schedules -->Associations--> add Node
+
+
+
+====================== add DISK STORAGE POOL ===========================================
+1.create LV on AIX SYSTEM
+2. manage Server Storage --> Work whith disk Storage Pool --> Define a disk Storage pool volume
+3. Add Volume Name = /dev/rstgpol01 
+
+db2 connect to ibmcppt
+
+db2 list db directory
+
+db2 uncatalog database ARCHIVE3
+
+db2 uncatalog node B3ARC01
+
+db2 list db directory
+
+db2 catalog tcpip node B3ARC01 remote 172.27.10.6 server 50250
+
+db2 catalog database ARCHIVE3 as ARCHIVE3 at node B3ARC01
+
+db2 list db directory
+
+db2 list node directory |more
+
+
+
+How to run SQL LOADER 
+
+The control file is ulcase1.ctl:
+
+LOAD DATA
+INFILE *
+INTO TABLE dept
+FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"'
+(deptno, dname, loc)
+BEGINDATA
+12,RESEARCH,"SARATOGA"
+10,"ACCOUNTING",CLEVELAND
+11,"ART",SALEM
+13,FINANCE,"BOSTON"
+21,"SALES",PHILA.
+22,"SALES",ROCHESTER
+42,"INT'L","SAN FRAN" 
+
+tapeutil -f /dev/smc0 inventory|pg
+
+
+Session established with server B3TSM01: AIX-RS/6000
+  Server Version 5, Release 1, Level 6.5
+  Server date/time: 12/05/07   15:47:35  Last access: 12/05/07   15:44:53
+
+
+tsm: B3TSM01>label libvolume 3584LIB checkin=scratch search=BULK overwrite=yes labelsource=barcode
+ANS8003I Process number 22 started.
+
+tsm: B3TSM01>q req
+ANR8352I Requests outstanding:
+ANR8373I 004: Fill the bulk entry/exit port of library 3584LIB with all LTO volumes to be processed within 60 minute(s);
+issue 'REPLY' along with the request ID when ready.
+
+tsm: B3TSM01>reply 004
+ANR8499I Command accepted.
+
+tsm: B3TSM01>q proc
+
+ Process     Process Description      Status
+  Number
+--------     --------------------     -------------------------------------------------
+      22     LABEL LIBVOLUME          ANR8805I Labelling volumes in library 3584LIB; 0
+                                       volumes(s) labelled.\
+
+
+tsm: B3TSM01>
+
+
+
+
+hdisk and vpath correspondance for IBM SAN (shark) 
+Description
+
+Correspondance between phsical disks:
+
+4 hdisk = 1 vpath = 1 physical disk
+
+To remove all vpaths run the command:
+
+# rmdev -dl dpo -R
+
+To remove all fibre channel disks (2 cards in this example):
+
+# rmdev -dl fscsi0 -R
+# rmdev -dl fscsi1 -R
+
+To recreate the hdisks run the command:
+# cfgmgr -vl fcs0
+# cfgmgr -vl fcs1
+
+To recreate the vpaths run the command:
+
+# cfallvpath
+
+To delete a device run this command:
+
+# rmdev -l fcs1 -d 
+Example
+
+rmdev -dl dpo -R ; rmdev -dl fscsi0 -R ; cfgmgr -vl fcs0 ; cfallvpath 
+
+
+
+
+就目前公司幾種型號的交換的mirror port做法:
+
+1.Cisco 3500
+   cisco3500(config)#int fa0/41
+   cisco3500(config-)#port monitor fa0/42
+   #在fa0/41這個port下,監控fa0/42的流量
+
+2.Cisco 2950/3550/3750/6509(WS-SUP720) IOS
+  CS2950(config)#monitor session 1 source interface fastEthernet 0/1 both  /tx /rx
+  # 設定被監控端口,並通過both,rx,tx參數設定流量類型       
+  CS2950(config)#monitor session 1 destination interface fastEthernet 0/48 
+  #設定監控端口.即流量採集端口.
+
+3.Cisco6509 (SUP1A-2GE) Catalyst
+  set span 4/1 4/8
+  #4/1的流量Mirror到4/8,4/8為監控端口.
+
+4.Foundry FES4802 
+   FES4802(config)mirror eth 47
+   FES4802(config)int eth 48
+   FES4802(config-if-100-48)monitor eth 47 both
+  #從48監控47 port.
+
+5.EdgeIron 4802F
+EdgeIron 4802F(config)#monitor ports enable
+EdgeIron 4802F(config)#int 1/1/2
+EdgeIron 4802F(config-if 1/1/2)#port monitor 1/1/1
+# 先啟用monitor的功能,然後在1/1/2上面監控1/1/1這個port流量.
+
+AP 每日回應時間的加總
+select HOST, to_char(LOG_DATE,'mm/dd/yyyy')as LOG_DATE, AP_NAME, sum(RPS_AVG)
+from SA.AP_TRX_RPS_DAY
+where log_date between '04/27/2008' and '05/20/2008'
+group by HOST, LOG_DATE,AP_NAME,rps_avg
+order by host,log_date,rps_avg desc
+
+Total Volume by daily
+select HOST, to_char(LOG_DATE,'mm/dd/yyyy')as LOG_DATE, sum(TX_SUM) from SA.AP_TRX_VOL_DAY
+where log_date between '04/27/2008' and '05/20/2008'
+group by HOST, LOG_DATE
+order by host,log_date
+
+
+To generate and run reorg and runstats scripts:
+
+Log in as the DB2 administrator, and connect to the database.
+
+To create a script for reorg table, run the following command on one line:
+db2inst1@sevenj:~> db2 "list tables for all" | awk '{print $2"." $1}' | awk '/\w/ {print $0}' | sed '/^Schema.Table/d' | sed '/^record(s)./d' | sed 's/^/REORG TABLE /g' | sed 's/$/;/g' > /tmp/reorg_tbl.ddl
+
+To create a script for reorg index, run the following command on one line:
+db2inst1@sevenj:~> db2 "list tables for all" | awk '{print $2"." $1}' | awk '/\w/ {print $0}' | sed '/^Schema.Table/d' | sed '/^record(s)./d' | sed 's/^/REORG INDEXES ALL FOR TABLE /g' | sed 's/$/;/g' > /tmp/reorg_idx.ddl
+
+To create a script for runstats, run the following command on one line:
+db2inst1@sevenj:~> db2 "list tables for all" | awk '{print $2"." $1}' | awk '/\w/ {print $0}' | sed '/^Schema.Table/d' | sed '/^record(s)./d' | sed 's/^/RUNSTATS ON TABLE /g' | sed 's/$/ WITH DISTRIBUTION AND DETAILED INDEXES ALL;/g' > /tmp/runstats_tbl.ddl
+
+Run reorg against tables and indexes, then runstats by entering the following lines:
+db2inst1@sevenj:~> db2 -tvf /tmp/reorg_tbl.ddl db2inst1@sevenj:~> db2 -tvf /tmp/reorg_idx.ddl db2inst1@sevenj:~> db2 -tvf /tmp/runstats_tbl.ddl 
+
+Ignore the following message if you receive it: 
+SQL2212N The specified table is a view. The Reorganize Table utility cannot be run against a view.
+
+To capture the message printed on screen, you can pipe the standard output into a file, such as with the following command:
+db2inst1@sevenj:~> db2 -tvf /tmp/runstats_tbl.ddl > filename.log 2>&1
+
+
+lscfg -pl sysplanar0 | grep Model | awk ' {print }'
+
+root@d3dev02:/>lsmcode -rt system
+system:3K050405       |System Firmware:RG050405_d79e05_regatta
+
+
+root@d3dev02:/>lsdev -C | grep "fcs"
+fcs0        Available 1j-08           FC Adapter
+fcs1        Available 1n-08           FC Adapter
+
+verify microcode version
+1. lscfg -vl fcs0
+2. lsmcode -d fcs0
+
+3、1）下?微?文件FC6239FW.bin，上?到AIX。?行它解??，口令是**RS/6000**。得到下面的文件：
+df1080f9.181301
+
+3、2）用下面的命令??它的校?和是否正确：
+sum df1080f9.181301 
+1.81x1版的checksum ??是 45802
+
+3、3）移?到相?的目?：
+mv df1080f9.181301 /etc/microcode/df1080f9.181301
+
+4）升?微?：
+用root用?登?到AIX命令行，?行diag ：
+#diag
+??：
+Task Selection (Diagnostics, Advanced Diagnostics, Service Aids, etc.) 
+??：
+Download Microcode 
+??要升?微?的光?卡??
+fcs* 
+回?，升??始……
+?升??束后系???示微?升?后的版本?181301.
+
+
+
+
+
+db2 reorgchk current statistics on table all > chk.txt
+sed 's/表：/Table: /' /tmp/reorgchk.txt | \
+awk '{
+if (NF == 2 && $1 ~ /^Table/) printf "\n\n"$2" "; 
+if (NF == 12 && $NF ~ /\*/) printf "table "$1"."$2" ";
+if (NF == 15 && $NF ~ /\*/) printf "index "$1"."$2" "
+}' | \
+awk '{
+if ($2 == "table") 
+print "db2 reorg table "$1" inplace allow write access\ndb2 runstats on table "$1" and indexes all allow write access";
+if ($2 == "index") 
+print "db2 reorg indexes all for table "$1" allow write access\ndb2 runstats on table "$1" and indexes all allow write access"}
+END {print "db2rbind sample -l db2rbind.out"}' | \
+sort |uniq
+
+
+TSM SESSION timeout 
+
+SETOPT  commtimeout 60
+
+
+
+create AIX BOOT CDROM
+
+On any AIX system at the SAME kernel level as the system you are wanting to (re)boot (e.g. 5300-05)
+1. # cd /var/adm/ras
+2. # ls ./bosinst.data ./image.data | backup -ivqf /tmp/fakemksysb
+3a: # mkcd -m /tmp/fakemksysb -d /dev/cdX ## X is device number of cd/dvd writer
+3b. # mkcd -m /tmp/fakemksysb -S ## will create a .iso formated file in a "default location" - it will not end in .iso Transfer this file to system with a cd/dvd burner and burn the CD
+
+
+
+how to replace IBM FC on 6M2
+
+lscfg -vl fcsX ( Copy WWPN )
+datapath query adapter fcsX ( Verify Whcih one Failed)
+datapath remove adapter 0 (FCS0 -> 0 )
+rmdev -dl fcs0 -R
+diag(remove FC by HOT PLUG)
+Task Selection --> Hot Plug Task --> Replace/Remove a PCI Hot Plug Adapter 
+Replace FC Card
+cfgmgr
+modify ESS Storwatch Specialist (Change WWPN )
+cfgmgr
+addpaths
+
+
+
+tsm query event log
+
+query event AIXDOMAIN * begindate=TODAY-1 enddate=TODAY-1
+
+
+
+FOUNDRY ACL
+
+add new rule 
+1 conf t
+2 ip access-list extended AMHS2
+3 permit ip host 172.27.15.118 172.27.36.0 0.0.1.255
+4 wri mem
+
+
+root@b3spc003:/>chdev -l vpath15 -a pv=yes
+Method error (/usr/lib/methods/chgvpath):
+        0514-047 Cannot access a device.
+
+root@b3spc003:/>lquerypr -Vh /dev/vpath15
+open device /dev/vpath15
+setkey.compcode = 0
+setkey.returncode = 1
+5e1ffc01
+Reserved with different key 5e1ffc01, current host key 52077a01
+root@b3spc003:/>lquerypr -Vph /dev/vpath15
+open device /dev/vpath15
+setkey.compcode = 0
+setkey.returncode = 0
+5e1ffc01
+Reserved with different key 5e1ffc01, current host key 52077a01
+root@b3spc003:/>lquerypr -Vh /dev/vpath15
+open device /dev/vpath15
+setkey.compcode = 0
+setkey.returncode = 0
+
+
+1. 先從 app list 去判斷需要啟動的 ap , 並做 sort. 
+2. 從 process 抓取目前正在執行的 ap , 並做 sort.
+3. 比較 1&2 的結果 (第1項需在User account下的/conf下有app_list的地方)
+ 
+ 
+比較 PPT AP 
+ 1. cat `ls -a app*`|grep exe |awk -F: '{if ($2=="Y") print $7}'|sort;cat `ls -a app*`|grep exe |awk -F: '{if ($2=="Y") print $7}'|wc -l 
+ 2. ps -ef|grep ppt/exe|grep " 1 "|grep -v grep|awk '{print $9}'|sort;ps -ef|grep ppt/exe|grep " 1 "|grep -v grep|awk '{print $9}'|wc -l 
+ 
+比較 PPT DCS AP 
+ 1. cat `ls -a app*`|grep exe |awk -F: '{if ($2=="Y") print $7}'|sort;cat `ls -a app*`|grep exe |awk -F: '{if ($2=="Y") print $7}'|wc -l 
+ 2. ps -ef|grep dcs/exe|grep " 1 "|grep -v grep|awk '{print $9}'|sort;ps -ef|grep dcs/exe|grep " 1 "|grep -v grep|awk '{print $9}'|wc -l 
+ 
+ 
+比較 HIS AP 
+ 1. cat `ls -a app*`|grep exe |awk -F: '{if ($2=="Y") print $7}'|sort;cat `ls -a app*`|grep exe |awk -F: '{if ($2=="Y") print $7}'|wc -l 
+ 2. ps -ef|grep his/exe|grep " 1 "|grep -v grep|awk '{print $9}'|sort;ps -ef|grep his/exe|grep " 1 "|grep -v grep|awk '{print $9}'|wc -l 
+ 
+比較 HIS DCS AP 
+ 1. cat `ls -a app*`|grep exe |awk -F: '{if ($2=="Y") print $7}'|sort;cat `ls -a app*`|grep exe |awk -F: '{if ($2=="Y") print $7}'|wc -l 
+ 2. ps -ef|grep dcs/exe|grep " 1 "|grep -v grep|awk '{print $9}'|sort;ps -ef|grep dcs/exe|grep " 1 "|grep -v grep|awk 
+
+
+
+tsm active log full 
+backup tsm db will reset log util
+
+
+網路線(UTP,Unshielded Twisted Pair)學名叫無遮蔽雙絞線，是由四對線每對自行互絞構成，互絞的作用是避免傳輸干擾及衰減。至於電話線的8P也是呈互絞排列，但是其互絞的作用是避免在外皮剝開後排序混亂，互絞的程度也沒UTP線來的圈數多。
+
+由於UTP線互絞是有意義的，故在做RJ45接頭時是不可以隨便接的。
+
+UTP線主要靠第一、二、三、六線處理收發資料。
+
+568B色序-->橙白、橙、綠白、藍、藍白、綠、棕白、棕。
+
+568A色序-->綠白、綠、橙白、藍、藍白、橙、棕白、棕。
+
+UTP線的兩端皆相同為568B或568A，稱為平行線。
+
+UTP線的兩端不同，一端為A另一端為B，稱之為跳線。
+
+
+*cx. no. : C858-839-2000
+	key:3811-7292-4140-9546-2120
+85
+
+
+WIN 7 PRO 9BKFG-KWGY6-9W3BJ-F4FDM-CBM39
+
+tnsping macs01_AIX
+sqlplus sa/sa@macs01_AIX
+
+
+Dear All,
+
+          提供判斷 AP 是否正常啟動的 shell 供各位參考 ,
+          我的方式如下 , 
+          1. 先從 app list 去判斷需要啟動的 ap , 並做 sort.
+          2. 從 process 抓取目前正在執行的 ap , 並做 sort
+          3. 比較 1&2 的結果
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+比較 PPT AP
+  1. cat `ls -a app*`|grep exe |awk -F: '{if ($2=="Y") print $7}'|sort;cat `ls -a app*`|grep exe |awk -F: '{if ($2=="Y") print $7}'|wc -l
+  2. ps -ef|grep ppt/exe|grep " 1 "|grep -v grep|awk '{print $9}'|sort;ps -ef|grep ppt/exe|grep " 1 "|grep -v grep|awk '{print $9}'|wc -l
+
+比較 PPT DCS AP
+  1. cat `ls -a app*`|grep exe |awk -F: '{if ($2=="Y") print $7}'|sort;cat `ls -a app*`|grep exe |awk -F: '{if ($2=="Y") print $7}'|wc -l
+  2. ps -ef|grep dcs/exe|grep " 1 "|grep -v grep|awk '{print $9}'|sort;ps -ef|grep dcs/exe|grep " 1 "|grep -v grep|awk '{print $9}'|wc -l
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+比較 HIS AP
+  1. cat `ls -a app*`|grep exe |awk -F: '{if ($2=="Y") print $7}'|sort;cat `ls -a app*`|grep exe |awk -F: '{if ($2=="Y") print $7}'|wc -l
+  2. ps -ef|grep his/exe|grep " 1 "|grep -v grep|awk '{print $9}'|sort;ps -ef|grep his/exe|grep " 1 "|grep -v grep|awk '{print $9}'|wc -l
+
+比較 HIS DCS AP
+  1. cat `ls -a app*`|grep exe |awk -F: '{if ($2=="Y") print $7}'|sort;cat `ls -a app*`|grep exe |awk -F: '{if ($2=="Y") print $7}'|wc -l
+  2. ps -ef|grep dcs/exe|grep " 1 "|grep -v grep|awk '{print $9}'|sort;ps -ef|grep dcs/exe|grep " 1 "|grep -v grep|awk '{print $9}'|wc -l
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+[root@localhost ~]# mysql
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 24658
+Server version: 5.0.68 Source distribution
+
+Type 'help;' or '\h' for help. Type '\c' to clear the buffer.
+
+mysql> use syslog
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> check table syslog_incoming;
++------------------------+-------+----------+-------------------------------------------------------+
+| Table                  | Op    | Msg_type | Msg_text                                              |
++------------------------+-------+----------+-------------------------------------------------------+
+| syslog.syslog_incoming | check | warning  | Table is marked as crashed                            |
+| syslog.syslog_incoming | check | warning  | 1 client is using or hasn't closed the table properly |
+| syslog.syslog_incoming | check | error    | Record at pos: 443796 is not remove-marked            |
+| syslog.syslog_incoming | check | error    | record delete-link-chain corrupted                    |
+| syslog.syslog_incoming | check | error    | Corrupt                                               |
++------------------------+-------+----------+-------------------------------------------------------+
+5 rows in set (0.06 sec)
+
+mysql> repair table syslog_incoming;
++------------------------+--------+----------+----------------------------------------+
+| Table                  | Op     | Msg_type | Msg_text                               |
++------------------------+--------+----------+----------------------------------------+
+| syslog.syslog_incoming | repair | warning  | Number of rows changed from 662 to 665 |
+| syslog.syslog_incoming | repair | status   | OK                                     |
++------------------------+--------+----------+----------------------------------------+
+2 rows in set (0.06 sec)
+
+mysql>
+mysql> check table syslog_incoming;
++------------------------+-------+----------+----------+
+| Table                  | Op    | Msg_type | Msg_text |
++------------------------+-------+----------+----------+
+| syslog.syslog_incoming | check | status   | OK       |
++------------------------+-------+----------+----------+
+1 row in set (0.00 sec)
+
+mysql> repair table syslog_incoming;
++------------------------+--------+----------+----------+
+| Table                  | Op     | Msg_type | Msg_text |
++------------------------+--------+----------+----------+
+| syslog.syslog_incoming | repair | status   | OK       |
++------------------------+--------+----------+----------+
+1 row in set (0.01 sec)
+
+mysql>
+
+
+/* make sure these values refect your actual database/host/user/password */
+$database_type = "mysql";
+$database_default = "cacti";
+$database_hostname = "localhost";
+$database_username = "cactiuser";
+$database_password = "CactiMadeEZ";
+$database_port = "3306";
+
+
+
+0.7a Account Inforation
+
+root      : xW1Vmgxo
+cactiuser : Om6PrMW1
+
+
+Cacti - CactiEZ 0.7 syslog 祇有 localhost 的 log 問題
+
+
+裝了 CactiEZ 0.7 後發現網路設備 syslog ?不進來，
+查了一陣子在 Cacti Official Forum 找到相關資料，原來是 rsyslogd 的預設 config 有問題
+把 /etc/rsyslog.conf 內下列兩項設定的註解碼去掉再 reboot 就可以了
+  
+   $ModLoad imudp
+   $ModLoad imtcp
+9
+另外 syslog 顏色標示問題也一樣在同檔案內修正，把下列兩個參數改正就可以了。
+
+  %syslogfacility%, %syslogpriority%,  ==> '%syslogfacility-text%', %syslogpriority-text%',
+
+
+
+
+conf t
+interface fast 0/1
+switchport mode access 
+switchport access vlan 2
+end
+
+
+oracle export as sysdb
+exp  \'sys/cim123@mes    as    sysdba\' file=/home/oracle/mes_dump.dmp tables=VMI.TP_LOT,VMI.TP_CUT,VMI.TP_PANEL
+
+
+
+Killing or pausing the impdp/expdp job
+說明
+當使用 impdp/expdp 作資料庫匯出/匯入時，一旦要中斷程序，只是 Ctrl + C ，Job 是不會停止的。
+
+任務可以隨時停止及再次恢復
+可以在遠端不同主機上操作
+步驟
+狀況一：在 expdp/impdp 的命令列，立即中斷或暫停
+
+執行 Ctrl + C 中斷目前程序
+Export> kill_job
+Are you sure you wish to stop this job ([yes]/no): yes 
+or
+Export> stop_job=immediate  暫時停止
+狀況二：已經離開 expdp/impdp 命令列
+
+找出匯出或匯入的 JOB_NAME
+
+SQL> set linesize 350
+SQL> col owner_name format a12
+SQL> col job_mode format a10
+SQL> col operation format a10
+SQL> SELECT owner_name, job_name, operation, job_mode, state FROM dba_datapump_jobs;
+
+OWNER_NAME   JOB_NAME                       OPERATION  JOB_MODE   STATE
+------------ ------------------------------ ---------- ---------- ------------------------------
+SYSTEM       SYS_EXPORT_SCHEMA_01           EXPORT     SCHEMA     EXECUTING <====
+SYSTEM       SYS_IMPORT_SCHEMA_02           IMPORT     SCHEMA     NOT RUNNING
+SYSTEM       SYS_IMPORT_SCHEMA_01           IMPORT     SCHEMA     NOT RUNNING
+ 
+重新進入這個 job 的命令列
+
+expdp system ATTACH=<job_name>
+
+Export> kill_job
+or
+Export> stop_job=immediate 
+ 如果是暫時停止，恢復任務的步驟：
+
+Export> start_job
+Export> continue_client 
+
+
+
+
+一、成因
+
+
+　　 廣播風暴指過多的廣播包消耗了大量的網路帶寬，導致正常的資料包無法正常在網路中傳送，通常指一個廣播包引起了多個的響應，而每個響應又引起了多個得響應，就像滾雪球一樣，把網路的所有帶寬都消耗殆盡。該現象通常是由於網路環路、故障網卡、病毒等引起的。
+
+
+　　 二、預防（以CISCO catalyst switch為例）
+
+
+　　 1、首先使用網管分析你網路的baseline，這樣可以明確你的網路當中正常情況下的廣播包比例是多少。
+
+
+　　 2、目前絕大多數交換機都支持廣播風暴抑制特性，配置了這個特性以後，你可以控制每個埠的廣播包維持在特定的比例之下，這樣可以保留帶寬給必須的應用。
+　　 配置：（以CISCO catalyst switch為例）
+
+Int XX
+storm-control broadcast level 20.00
+switch#sh storm
+Interface Filter State Level Current
+--------- ------------- ------- -------
+Fa1/0/1 Forwarding 20.00% 0.00%
+
+
+
+　　 3、針對缺省STP配置無法排除的網路環路問題，利用STP的BPDUguard特性來預防廣播風暴。此種環路情況示意圖如下：
+　　 switch——hub（portA——portB）
+
+　　 Switch啟用了STP，而hub則被人有意無意的用一根網線聯起來，導致引起了環路。SWITCH的埠不會收到其他交換機或本交換機其他埠的 BPDU，不會觸發該埠的STP決策過程，也就不可能blocking該埠，這樣就會引起廣播風暴。我們可以利用CISCO STP的BPDUguard特性來預防這一點。
+
+int xxx
+spanning-tree bpduguard enable
+
+　　 ***值得注意的是bpduguard可以在全局下配置，也可以在每埠的基礎上配置。如果在全局下配置，則只對配置了portfast的埠起作用，如果在埠下配置，則不用配置portfast
+
+
+　　 三、排障（以CISCO catalyst switch為例）
+
+
+　　 如果網路中已經產生了網路風暴（現象通常為網路丟包、響應遲緩、時斷時通等），則可以利用如下的方法來排障
+
+　　 1、首先確認是否是網路風暴或其他異常流量引起的網路異常，在核心交換機上
+
+Switch〉sh proc cpu | e 0.00
+CPU utilization for five seconds: 19%/0%; one minute: 19%; five minutes: 19%
+PID Runtime(ms) Invoked uSecs 5Sec 1Min 5Min TTY Process
+15 20170516 76615501 263 0.31% 0.13% 0.12% 0 ARP Input
+26 7383266801839439482 401 5.03% 4.70% 5.08% 0 Cat4k Mgmt HiPri
+27 8870781921122570949 790 5.67% 7.50% 6.81% 0 Cat4k Mgmt LoPri
+43 730060152 341404109 2138 6.15% 5.29% 5.28% 0 Spanning Tree
+50 59141788 401057972 147 0.47% 0.37% 0.39% 0 IP Input
+56 2832760 3795155 746 0.07% 0.03% 0.01% 0 Adj Manager
+58 4525900 28130423 160 0.31% 0.25% 0.18% 0 CEF process
+96 20789148 344043382 60 0.23% 0.09% 0.08% 0 Standby (HSRP)
+
+　　 如果交換機的CPU利用率較高，且大部分的資源都被“IP Input”進程佔用，則基本可以確定網路中有大流量的資料
+
+
+　　 2、查找異常流量是從交換機的那一個埠來的：
+
+switch #sh int | i protocol|rate|broadcasts
+FastEthernet1/0/1 is up, line protocol is up (connected)
+Queueing strategy: fifo
+5 minute input rate 0 bits/sec, 0 packets/sec
+5 minute output rate 2000 bits/sec, 3 packets/sec
+Received 241676 broadcasts (0 multicast)
+
+　　 如果找到一個埠的input rate非常高，且接收到的廣播包也非常多，則基本可以找到來源，如果該埠下聯的也是可管理的交換機，則再次執行此過程，直到找到一個連接PC或者HUB的埠
+
+
+　　 3、shutdown該埠
+
+int xx
+shutdown
+
+　　 4、查找產生異常流量的根源
+
+　　 如果是HUB環路，則拆掉環；如果是病毒，則做殺毒處理；如果是網卡異常，則更換網卡。此部分不詳述。
+
+
+　　 5、確認交換機的CEF功能是否啟用，如果沒有，則需要啟用，可以加速流量的轉發
+
+　　 配置CEF：
+
+switch〉sh ip cef
+
+　　 全局模式下輸入
+
+ip cef
+
+macs startup shell script
+/usr/sbin/cluster/local
+start_macs_service
+
+
+
+
+cisco core switch defbug 
+
+
+show cpu process 
+sh processes cpu sorted | exclude 0.00
+show ip traffic
+show interface status 
+show interface
+
+router(config)# no logging console
+router(config)# no logging monitor
+router(config)# logging buffered
+router#debug ip packet detail
+router#undebug all
+router#show logging
+
+
+
+export ORACLE_SID=edc
+
+
+imp log/log@ARCHIVE file=TS1_HTRXLOG_05-20160705.dmp log=/worktmp/imp.log tables=HTRXLOG_05 fromuser=log touser=log buffer=2048000 commit=y ignore=y feedback=10000
+
+
+
+
+LINUX create lv and mount 
+
+1. pvcreate /dev/sdX
+2. vgcreate logvg /dev/sdX
+3. lvcreate /dev/logvg/loglv
+4. mkfs.ext4 /dev/logvg/loglv
+5. mkdir /Mount_Point
+6. mount /dev/logvg/loglv /Mount_Point  
+
+
+將電腦與 Switch 上的 Console Port 對接，用你習慣的軟體開啟 Console 畫面
+將接於 Switch 上的電源拔除，接上 Switch 電源，同時間按住 Switch 面板上的 「MODE」 鍵，待 Port 1 燈號熄滅後
+此時 Console 畫面會出現 「switch:」 提示輸入畫面
+輸入 flash_init
+輸入 load_helper
+輸入 rename flash:config.text flash:config.old
+輸入 boot
+交換器啟動後出現 Continue with configuration dialog? [yes/no]: 此訊息輸入 「no」
+出現 Press RETURN to get started. 此訊息時按下 「Enter」，得到提示符號「Switch>」，接著進行如下操作
+ Switch>en
+ Switch#
+ Switch#rename flash:config.old flash:config.text           //將檔案名稱改回 (保持原設定)
+ Switch#copy flash:config.text system:running-config        //將之前的設定內容取回
+ Switch#write erase                                         //若不想將之前設定取回而是要恢復原廠預設值時
+ Erasing the nvram filesystem will remove all files! Continue? [confirm]  //確認是否要清空內容
+ Erase of nvram: complete
+ Switch#reload                                              //重新啟動 Switch
+ System configuration has been modified. Save? [yes/no]: no //不將舊有設定回存    
+ Proceed with reload? [confirm]y                            //確定將 Switch 重新啟動
+
+
+
+tsm backup schedule midify
+1. modify copygroup keep day
+2. apply
+3. choose stand domain 
+4. active rule
+
+
+1. expire inventory
+2. backup db devclass=tsmdbbkp type=full
+
+DBLOGARCH
+
+TSM Server Client node update password
+1. dsmadmc --> update node D3DEV02 (node) D3DEV02(password)  FORCEPwreset=No
+2. client 執行dsmc 輸入新密碼 --> 測試備份
+3. 執行gui測試取回檔案是否正常。
+
+update user authority for tsm (add node)
+GRANT AUTHORITY hannstar CLasses=Node NOde=MACS01
+
+
+
+
+V5020 superuser passw0rd
+V7000 superuser	passw0rd
+
+
+1. dsmadmc --> update node D3DEV01(node) D3DEV01(pwd) forcep=no
+2. AIX --> dsmc --> 輸入密碼。(需執行否則備份會失敗)
+3. dsmadmc --> register admin D3DEV01 D3DEV01
+4. dsmadmc --> grant authority D3DEV01 class=node  node=D3DEV01 authority=owner
+
+
+dsmc -optfile=/tsmhafs/c3hdb01/baclient/dsm.opt
+
+
+
+CISCO 2950 3550 密碼回復
+
+1. flash_init
+2. load_helper
+3. rename flash:config.text flash:config.old
+4. boot
+ 以上指令輸入完後，就會將設備開機，此時就會跳過密碼檢查
+
+3) 重新開機成功後，進入 IOS enable mode 利用指令「enable password」重新設定密碼，並記得把 config.old 檔案名稱改回 config.txt,
+5. rename flash:config.old flash:config.text
+6. copy flash:config.text system:running-config
+7. config terminal
+8. no enable secret
+9. exit
+10.write memory
+
+
+TSM DB Restore
+dsmserv restore db todate=today
+
+
+tsm command 
+ check expinterval config : q option
+ setopt expinterval 0 => 修改expire 時間週期 (關閉系統預設自動執行：非排程)
+ 
+ 設定tsm db log mode 
+ set logmode rollforward => q status (檢查狀態)
+ 
+ 
+ tsm commnd 差異
+ query occ ：實際備份資料使用空間大小
+ query filespace ： 備份當時主機所有檔案系統資訊
+ 
+ 
+ 
+ L20 D 區未接上cisco 網路線號20D053、20D050、20D059、20D046
+ 
+ 
+ 
+ 過濾檔案不壓縮
+ C:\>"C:\Program Files\WinRAR\winrar.exe" u -ibck -inul -agYYYYMMDD D:\web_prs_BKP\web_prs_.rar  C:\web_prs -x*\Web_Prs\F3CFINSQCS_AOI\image_temp\*  -x*\web_prs\ora\*
+ 
+ 
+ CISCO ACL 
+ ip access-list resequence VLAN9_IN 10 10 ：修改acl 編號 從10開始間隔10
+ 
+ 在Cisco IOS的新版本（12.2(14)S，12.2(15)T，12.3(2)T以上)中
+加入了ACL編號(ACL Sequence Numbering)功能，
+使得Access Control List的編輯變得非常的方便和快捷，以下說明：
+
+
+顯示Access Control List語句的當前序號
+　R1#show ip access-lists 199
+　　Extended IP access list 199
+　　10 deny tcp any any eq www
+　　20 deny udp any any eq 8000
+　　30 permit ip any any
+在Access Control List中指定的位置上增加一個語句
+　R1(config)#ip access-list extended 199
+　R1(config-ext-nacl)#12 permit udp any host 192.168.1.1 eq 8000
+　R1#show ip access-lists 199
+　　Extended IP access list 199
+　　10 deny tcp any any eq www
+　　12 permit udp any host 192.168.1.1 eq 8000
+　　20 deny udp any any eq 8000
+　　30 permit ip any any
+刪除Access Control List中的某個特定語句
+　R1(config)#ip access-list extended 199
+　R1(config-ext-nacl)#no 20
+　R1#show ip access-lists 199
+　　Extended IP access list 199
+　　10 deny tcp any any eq www
+　　12 permit udp any host 192.168.1.1 eq 8000
+　　30 permit ip any any
+
+
+Cisco Ether Channel Config:
+
+interface Port-channel1
+description ## Link to ServerRoom-2960s ##
+switchport access vlan 100
+switchport mode access
+load-interval 30
+
+
+On Ether Channel Interface 
+
+interface GigabitEthernet1/0/7
+ description ## Link to ServerFarm Switch 2960S ##
+ switchport access vlan 100
+ switchport mode access
+ load-interval 30
+ channel-group 1 mode on
+
+
+
+
+macs server start 
+/home3/hsd/macs-hsd/scripts/start_macs_service
+
+macs server stop 
+/home3/hsd/macs-hsd/scripts/stop_macs_service
+
+oracle materialized creatr 
+1. source create materialized log table : Distributed --> Advanced Replication --> Materialized View Replication --> Master Groups --> Materialized Logs
+----------------------------------------------------------------------
+CREATE MATERIALIZED VIEW LOG 
+    ON "PPT"."TEQPTVENDER" 
+TABLESPACE "PPTTBS" PCTFREE 10 PCTUSED 0 MAXTRANS 255 STORAGE ( INITIAL 64K NEXT 1024K MINEXTENTS 1 MAXEXTENTS 2147483645 PCTINCREASE 0) 
+WITH PRIMARY KEY 
+EXCLUDING NEW VALUES
+-----------------------------------------------------------------------
+
+2. Targer Create materialized Table 
+
+-------------------------------------------------------------------------
+CREATE MATERIALIZED VIEW "PPT"."TEQPTVENDER"
+TABLESPACE "PPTTBS"
+BUILD IMMEDIATE
+USING INDEX TABLESPACE "PPTIDX"
+REFRESH FORCE
+NEXT sysdate + 1/1440
+AS
+select * from PPT.TEQPTVENDER@PPT;
+
+exit;
+-------------------------------------------------------------------------
+ sqlplus archive/archive@ARCHIVE @alter_table.sql | tee alter_table.sql.log
+
+
+
+
+MQ Command Server Error 
+1. stop MQ Command   :   endmqcsv -i SMQTPP
+2. Start MQ Command :    strmqcsv SMQTPP
+
+
+
+
+[root@benjr ~]# pwd
+/root
+[root@benjr ~]# ls -laR |grep "^-" |awk 'END{print "Number of files."NR}'
+Number of files:2512
+[root@benjr ~]# ls -laR |grep "^d" |awk 'END{print "Number of directories."NR}'
+Number of directories:3752
+
+
+find /home -type d -maxdepth 1 -exec du -sh {} \;
+
+Oracle Reorg Table Command : 
+alter table PPT.HINSPDEF_9 enable row movement;
+alter table PPT.HINSPDEF_9 shrink space cascade;
+alter table PPT.HINSPDEF_9 disable row movement;
+
+Oracle Index Rebuild
+
+alter index PPT.PK_HEQPTEDC_TFEULD rebuild tablespace PPTIDX;
+
+
+Oralce sql 
+
+sqlplus ppt/ppt@PPT @alter_table.sql | tee alter_table.sql.log
+
+
+
+
+Oracle Create MaterView
+
+
+CREATE MATERIALIZED VIEW "PPT"."TBOM"
+TABLESPACE "PPTTBS"
+BUILD IMMEDIATE
+USING INDEX TABLESPACE "PPTIDX"
+REFRESH FAST
+NEXT sysdate + 1/1440
+AS
+select * from PPT.TBOM@PPT;
+
+exit;
+
+=========== switch port config wifi AP with Vlan 2 ' 9 ======
+interface FastEthernet0/48
+ switchport trunk native vlan 2
+ switchport trunk allowed vlan 2,9
+ switchport mode trunk
+ storm-control broadcast level 10.00
+
+
+
+Service "AIX" has 2 instance(s).
+  Instance "AIX", status UNKNOWN, has 1 handler(s) for this service...
+  Instance "AIX", status READY, has 1 handler(s) for this service...
+The command completed successfully
+
+
+sqlplus /nolog 
+connect as sysdba
+alter system register;
+
+
+
+================ resotre db ======================
+db2 restore db IBMFRPT from /V7000U_DBRESTORE to /sysuser/cfrinst replace existing
+
+
+Cisco的流量側錄功能稱作:SPAN
+
+SPAN可以設定要把指定的Port都複製一份流量到
+另一個的Port上 ,還可以設定只要複製進或出的流量。 
+SW Port1接著對內外的流量，我想要側錄這段分析，
+所以我可以將Port1進與出的流量都複製一份到Port2
+並將錄製或監控封包的設備接到Port2，完全不需要插拔線路!
+
+
+
+以下介紹一下Cisco 的交換器做流量側錄指令
+
+Command:
+
+switch> enable
+switch> show ip interface brief
+switch# conf t
+
+config# monitor session 1 source interface Fa0/2 both
+(config# monitor session [數字] [來源或目的] interface [介面代號] [進或出或全部] )
+或選擇多個來源:
+monitor session 1 source interface fa0/2 - 13 , Fa0/15    //介面2-13與15都被複製
+monitor session 1 source interface fa0/2 , fa0/4    //介面2 與 4 被複製
+
+設定複製到指定Port:
+config# monitor session 1 destination interface g0/1
+
+示意圖(Port設定不同):
+
+
+
+
+
+check:
+1.退回P mode
+(使用exit)
+2. Show monitor session [號碼]  or  show monitor
+
+
+要移除SPAN的設定 , 只要在Global mode下設定來源與目的的指令前面加上 no
+no monitor session 1即可
+
+
+
+
+
+DB2 Tablespace Resize 
+
+1 . AIX --> HACMP --> lv  --> set lv -- > increase LV Size 
+2 . DB2 --> alter tablespace USR32K01 Resize ( deivce '/dev/rtrpt16K0303' 2048M)"
+
+
+
+
+
+ACL IN VLAN 注意事項：
+
+在vlan間的acl中當源地址段為應用 vlan介面的ip段時，就是用in方向；
+來源：172.27.10.1  VLAN 2    
+VLAN 介面： VLAN 2
+禁止同一VLAN IP ACCESS 其它IP 或是服務
+
+當目的地址段為應用vlan介面的ip段時，就是用out方向;
+來源：VLAN 2 3 4 6 9 50 
+目地： VLAN 5
+
+
+目前AMHS 使用的為此規則禁止外部存取AMHS 網段IP ，目地端為AMHS 網段所以在INTERFACE VLAN 上要套用OUT  
+
+
+%CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet2/0/1 (11), with TS_CIM_OA GigabitEthernet2/1/4 (1).
+
+# no cdp advertise-v2   在各設備上下這個指令
+
+
+
+
+
+switchport trunk native vlan 2
+switchport trunk allowed vlan 2,9,13
+switchport mode trunk
+
+
+interface  
+snmp trap mac-notification change add
+
+
+config 
+L2-SW-LK05-01(config)#snmp-server enable traps mac-notification change move threshold
+L2-SW-LK05-01(config)#mac address-table notification change
+
+
+
+
+ snmp trap mac-notification change added
+ storm-control broadcast level 10.00
+ spanning-tree bpduguard enable
+
+
+
+ls -al | awk  ' { if ($5==0) print $9 }' | while read a b;do rm -f $a;done
+
+
+
+若要在 Cisco 設備上使用命令列介面來關閉 Smart Agent for Licensing 的 "Call-home" 功能，您可以按照以下步驟進行操作：
+
+Disable Cisco Cisco Smart License Utility (CSLU)
+
+
+no service call-home
+no call-home
+license smart transport off
+
+
+
+
+fnsysctl df -h
+
+config ips global
+set database regular
+end
+
+config antivirus settings
+set default-db normal
+end
+
+config system autoupdate schedule
+set status disable
+end
+
+diagnose geoip delete-geoip-db
+
+execute update-geo-ip
+
+
+
+單一個vlan 的ehterchannel 設定
+
+interface Port-channel9
+ switchport access vlan 9
+ switchport mode access
+
+interface GigabitEthernet2/0/9
+ switchport access vlan 9
+ switchport mode access
+ channel-group 9 mode active
+!
+interface GigabitEthernet2/0/10
+ switchport access vlan 9
+ switchport mode access
+ channel-group 9 mode active
+
+
+
